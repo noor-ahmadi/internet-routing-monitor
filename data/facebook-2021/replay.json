@@ -1,0 +1,6155 @@
+{
+  "id": "historical",
+  "source": "ris-mrt",
+  "start": 1633361700000,
+  "duration": 21300,
+  "initialTime": 120,
+  "observers": [
+    {
+      "id": "rrc06:202.249.2.169:2497",
+      "city": "RRC06 · AS2497",
+      "collector": "rrc06",
+      "peer": "202.249.2.169",
+      "asn": 2497,
+      "baseline": [
+        2497,
+        32934
+      ],
+      "baselineEvidence": {
+        "archive": "bview.20211004.0800.gz",
+        "sha256": "085114bd852ae58065853241d4384e9ca3cef104dd3134c33dd25d33b436c427",
+        "prefixElement": 1,
+        "sourceTime": "2021-10-04T08:00:00Z",
+        "raw": {
+          "timestamp": 1633089207.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.169",
+          "peer_asn": 2497,
+          "peer_bgp_id": "58.138.97.242",
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.169",
+          "as_path": "2497 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "baselineStatus": "observed"
+    },
+    {
+      "id": "rrc06:202.249.2.20:4777",
+      "city": "RRC06 · AS4777",
+      "collector": "rrc06",
+      "peer": "202.249.2.20",
+      "asn": 4777,
+      "baseline": [
+        4777,
+        2516,
+        32934
+      ],
+      "baselineEvidence": {
+        "archive": "bview.20211004.0800.gz",
+        "sha256": "085114bd852ae58065853241d4384e9ca3cef104dd3134c33dd25d33b436c427",
+        "prefixElement": 3,
+        "sourceTime": "2021-10-04T08:00:00Z",
+        "raw": {
+          "timestamp": 1632253048.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.20",
+          "peer_asn": 4777,
+          "peer_bgp_id": "202.12.28.1",
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.110",
+          "as_path": "4777 2516 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "baselineStatus": "observed"
+    },
+    {
+      "id": "rrc06:202.249.2.185:25152",
+      "city": "RRC06 · AS25152",
+      "collector": "rrc06",
+      "peer": "202.249.2.185",
+      "asn": 25152,
+      "baseline": [
+        25152,
+        6939,
+        32934
+      ],
+      "baselineEvidence": {
+        "archive": "bview.20211004.0800.gz",
+        "sha256": "085114bd852ae58065853241d4384e9ca3cef104dd3134c33dd25d33b436c427",
+        "prefixElement": 2,
+        "sourceTime": "2021-10-04T08:00:00Z",
+        "raw": {
+          "timestamp": 1630645594.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": "61.213.160.62",
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "baselineStatus": "observed"
+    }
+  ],
+  "events": [
+    {
+      "id": "ris:rrc06:updates.20211004.1540.gz:f75f0098532ab0838ebc068639fd93ae37997cafea2df273bf2e302b53c333bd:1",
+      "at": 444.0,
+      "sequence": 0,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.1540.gz",
+        "sha256": "f75f0098532ab0838ebc068639fd93ae37997cafea2df273bf2e302b53c333bd",
+        "prefixElement": 1,
+        "sourceTime": "2021-10-04T15:42:24Z",
+        "raw": {
+          "timestamp": 1633362144.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:1",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.1540.gz:f75f0098532ab0838ebc068639fd93ae37997cafea2df273bf2e302b53c333bd:2",
+      "at": 457.0,
+      "sequence": 1,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.1540.gz",
+        "sha256": "f75f0098532ab0838ebc068639fd93ae37997cafea2df273bf2e302b53c333bd",
+        "prefixElement": 2,
+        "sourceTime": "2021-10-04T15:42:37Z",
+        "raw": {
+          "timestamp": 1633362157.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:2",
+            "24115:1001:1",
+            "24115:1002:1",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.1540.gz:f75f0098532ab0838ebc068639fd93ae37997cafea2df273bf2e302b53c333bd:3",
+      "at": 458.0,
+      "sequence": 2,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.1540.gz",
+        "sha256": "f75f0098532ab0838ebc068639fd93ae37997cafea2df273bf2e302b53c333bd",
+        "prefixElement": 3,
+        "sourceTime": "2021-10-04T15:42:38Z",
+        "raw": {
+          "timestamp": 1633362158.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.1540.gz:f75f0098532ab0838ebc068639fd93ae37997cafea2df273bf2e302b53c333bd:4",
+      "at": 464.0,
+      "sequence": 3,
+      "observerId": "rrc06:202.249.2.20:4777",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.1540.gz",
+        "sha256": "f75f0098532ab0838ebc068639fd93ae37997cafea2df273bf2e302b53c333bd",
+        "prefixElement": 4,
+        "sourceTime": "2021-10-04T15:42:44Z",
+        "raw": {
+          "timestamp": 1633362164.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.20",
+          "peer_asn": 4777,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.110",
+          "as_path": "4777 2516 3257 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        4777,
+        2516,
+        3257,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.1540.gz:f75f0098532ab0838ebc068639fd93ae37997cafea2df273bf2e302b53c333bd:5",
+      "at": 471.0,
+      "sequence": 4,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.1540.gz",
+        "sha256": "f75f0098532ab0838ebc068639fd93ae37997cafea2df273bf2e302b53c333bd",
+        "prefixElement": 5,
+        "sourceTime": "2021-10-04T15:42:51Z",
+        "raw": {
+          "timestamp": 1633362171.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 265892 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        265892,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.1540.gz:f75f0098532ab0838ebc068639fd93ae37997cafea2df273bf2e302b53c333bd:6",
+      "at": 493.0,
+      "sequence": 5,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.1540.gz",
+        "sha256": "f75f0098532ab0838ebc068639fd93ae37997cafea2df273bf2e302b53c333bd",
+        "prefixElement": 6,
+        "sourceTime": "2021-10-04T15:43:13Z",
+        "raw": {
+          "timestamp": 1633362193.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 1299 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        1299,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.1540.gz:f75f0098532ab0838ebc068639fd93ae37997cafea2df273bf2e302b53c333bd:7",
+      "at": 495.0,
+      "sequence": 6,
+      "observerId": "rrc06:202.249.2.20:4777",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.1540.gz",
+        "sha256": "f75f0098532ab0838ebc068639fd93ae37997cafea2df273bf2e302b53c333bd",
+        "prefixElement": 7,
+        "sourceTime": "2021-10-04T15:43:15Z",
+        "raw": {
+          "timestamp": 1633362195.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.20",
+          "peer_asn": 4777,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.110",
+          "as_path": "4777 2516 174 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        4777,
+        2516,
+        174,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.1540.gz:f75f0098532ab0838ebc068639fd93ae37997cafea2df273bf2e302b53c333bd:8",
+      "at": 501.0,
+      "sequence": 7,
+      "observerId": "rrc06:202.249.2.169:2497",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.1540.gz",
+        "sha256": "f75f0098532ab0838ebc068639fd93ae37997cafea2df273bf2e302b53c333bd",
+        "prefixElement": 8,
+        "sourceTime": "2021-10-04T15:43:21Z",
+        "raw": {
+          "timestamp": 1633362201.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.169",
+          "peer_asn": 2497,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.169",
+          "as_path": "2497 174 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        2497,
+        174,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.1540.gz:f75f0098532ab0838ebc068639fd93ae37997cafea2df273bf2e302b53c333bd:9",
+      "at": 525.0,
+      "sequence": 8,
+      "observerId": "rrc06:202.249.2.20:4777",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.1540.gz",
+        "sha256": "f75f0098532ab0838ebc068639fd93ae37997cafea2df273bf2e302b53c333bd",
+        "prefixElement": 9,
+        "sourceTime": "2021-10-04T15:43:45Z",
+        "raw": {
+          "timestamp": 1633362225.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.20",
+          "peer_asn": 4777,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.110",
+          "as_path": "4777 2516 1299 174 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        4777,
+        2516,
+        1299,
+        174,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.1540.gz:f75f0098532ab0838ebc068639fd93ae37997cafea2df273bf2e302b53c333bd:10",
+      "at": 556.0,
+      "sequence": 9,
+      "observerId": "rrc06:202.249.2.20:4777",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.1540.gz",
+        "sha256": "f75f0098532ab0838ebc068639fd93ae37997cafea2df273bf2e302b53c333bd",
+        "prefixElement": 10,
+        "sourceTime": "2021-10-04T15:44:16Z",
+        "raw": {
+          "timestamp": 1633362256.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.20",
+          "peer_asn": 4777,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.169",
+          "as_path": "4777 2497 174 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        4777,
+        2497,
+        174,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.1545.gz:3fb15819eb5b468c19cb0e5206dfc7cc7dfdbbc3a4c80b286ba33b5dabf49913:1",
+      "at": 600.0,
+      "sequence": 10,
+      "observerId": "rrc06:202.249.2.169:2497",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.1545.gz",
+        "sha256": "3fb15819eb5b468c19cb0e5206dfc7cc7dfdbbc3a4c80b286ba33b5dabf49913",
+        "prefixElement": 1,
+        "sourceTime": "2021-10-04T15:45:00Z",
+        "raw": {
+          "timestamp": 1633362300.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.169",
+          "peer_asn": 2497,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.169",
+          "as_path": "2497 701 174 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        2497,
+        701,
+        174,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.1545.gz:3fb15819eb5b468c19cb0e5206dfc7cc7dfdbbc3a4c80b286ba33b5dabf49913:2",
+      "at": 617.0,
+      "sequence": 11,
+      "observerId": "rrc06:202.249.2.20:4777",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.1545.gz",
+        "sha256": "3fb15819eb5b468c19cb0e5206dfc7cc7dfdbbc3a4c80b286ba33b5dabf49913",
+        "prefixElement": 2,
+        "sourceTime": "2021-10-04T15:45:17Z",
+        "raw": {
+          "timestamp": 1633362317.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.20",
+          "peer_asn": 4777,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.169",
+          "as_path": "4777 2497 701 174 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        4777,
+        2497,
+        701,
+        174,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.1545.gz:3fb15819eb5b468c19cb0e5206dfc7cc7dfdbbc3a4c80b286ba33b5dabf49913:3",
+      "at": 651.0,
+      "sequence": 12,
+      "observerId": "rrc06:202.249.2.169:2497",
+      "kind": "withdrawal",
+      "evidence": {
+        "archive": "updates.20211004.1545.gz",
+        "sha256": "3fb15819eb5b468c19cb0e5206dfc7cc7dfdbbc3a4c80b286ba33b5dabf49913",
+        "prefixElement": 3,
+        "sourceTime": "2021-10-04T15:45:51Z",
+        "raw": {
+          "timestamp": 1633362351.0,
+          "elem_type": "W",
+          "peer_ip": "202.249.2.169",
+          "peer_asn": 2497,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": null,
+          "as_path": null,
+          "origin_asns": null,
+          "origin": null,
+          "local_pref": null,
+          "med": null,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      }
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.1545.gz:3fb15819eb5b468c19cb0e5206dfc7cc7dfdbbc3a4c80b286ba33b5dabf49913:4",
+      "at": 679.0,
+      "sequence": 13,
+      "observerId": "rrc06:202.249.2.20:4777",
+      "kind": "withdrawal",
+      "evidence": {
+        "archive": "updates.20211004.1545.gz",
+        "sha256": "3fb15819eb5b468c19cb0e5206dfc7cc7dfdbbc3a4c80b286ba33b5dabf49913",
+        "prefixElement": 4,
+        "sourceTime": "2021-10-04T15:46:19Z",
+        "raw": {
+          "timestamp": 1633362379.0,
+          "elem_type": "W",
+          "peer_ip": "202.249.2.20",
+          "peer_asn": 4777,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": null,
+          "as_path": null,
+          "origin_asns": null,
+          "origin": null,
+          "local_pref": null,
+          "med": null,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      }
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.1545.gz:3fb15819eb5b468c19cb0e5206dfc7cc7dfdbbc3a4c80b286ba33b5dabf49913:5",
+      "at": 704.0,
+      "sequence": 14,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "withdrawal",
+      "evidence": {
+        "archive": "updates.20211004.1545.gz",
+        "sha256": "3fb15819eb5b468c19cb0e5206dfc7cc7dfdbbc3a4c80b286ba33b5dabf49913",
+        "prefixElement": 5,
+        "sourceTime": "2021-10-04T15:46:44Z",
+        "raw": {
+          "timestamp": 1633362404.0,
+          "elem_type": "W",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": null,
+          "as_path": null,
+          "origin_asns": null,
+          "origin": null,
+          "local_pref": null,
+          "med": null,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      }
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2100.gz:a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87:1",
+      "at": 19541.0,
+      "sequence": 15,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2100.gz",
+        "sha256": "a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87",
+        "prefixElement": 1,
+        "sourceTime": "2021-10-04T21:00:41Z",
+        "raw": {
+          "timestamp": 1633381241.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2100.gz:a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87:2",
+      "at": 19562.0,
+      "sequence": 16,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2100.gz",
+        "sha256": "a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87",
+        "prefixElement": 2,
+        "sourceTime": "2021-10-04T21:01:02Z",
+        "raw": {
+          "timestamp": 1633381262.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 1299 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        1299,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2100.gz:a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87:3",
+      "at": 19566.0,
+      "sequence": 17,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2100.gz",
+        "sha256": "a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87",
+        "prefixElement": 3,
+        "sourceTime": "2021-10-04T21:01:06Z",
+        "raw": {
+          "timestamp": 1633381266.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 2914 174 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "2914:420",
+            "2914:1005",
+            "2914:2000",
+            "2914:3000"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        2914,
+        174,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2100.gz:a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87:4",
+      "at": 19571.0,
+      "sequence": 18,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2100.gz",
+        "sha256": "a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87",
+        "prefixElement": 4,
+        "sourceTime": "2021-10-04T21:01:11Z",
+        "raw": {
+          "timestamp": 1633381271.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2100.gz:a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87:5",
+      "at": 19572.0,
+      "sequence": 19,
+      "observerId": "rrc06:202.249.2.20:4777",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2100.gz",
+        "sha256": "a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87",
+        "prefixElement": 5,
+        "sourceTime": "2021-10-04T21:01:12Z",
+        "raw": {
+          "timestamp": 1633381272.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.20",
+          "peer_asn": 4777,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.110",
+          "as_path": "4777 2516 3356 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        4777,
+        2516,
+        3356,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2100.gz:a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87:6",
+      "at": 19584.0,
+      "sequence": 20,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2100.gz",
+        "sha256": "a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87",
+        "prefixElement": 6,
+        "sourceTime": "2021-10-04T21:01:24Z",
+        "raw": {
+          "timestamp": 1633381284.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 1299 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        1299,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2100.gz:a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87:7",
+      "at": 19591.0,
+      "sequence": 21,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2100.gz",
+        "sha256": "a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87",
+        "prefixElement": 7,
+        "sourceTime": "2021-10-04T21:01:31Z",
+        "raw": {
+          "timestamp": 1633381291.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 2914 174 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "2914:420",
+            "2914:1005",
+            "2914:2000",
+            "2914:3000"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        2914,
+        174,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2100.gz:a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87:8",
+      "at": 19592.0,
+      "sequence": 22,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2100.gz",
+        "sha256": "a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87",
+        "prefixElement": 8,
+        "sourceTime": "2021-10-04T21:01:32Z",
+        "raw": {
+          "timestamp": 1633381292.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 2914 174 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "2914:420",
+            "2914:1007",
+            "2914:2000",
+            "2914:3000"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        2914,
+        174,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2100.gz:a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87:9",
+      "at": 19600.0,
+      "sequence": 23,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2100.gz",
+        "sha256": "a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87",
+        "prefixElement": 9,
+        "sourceTime": "2021-10-04T21:01:40Z",
+        "raw": {
+          "timestamp": 1633381300.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2100.gz:a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87:10",
+      "at": 19614.0,
+      "sequence": 24,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2100.gz",
+        "sha256": "a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87",
+        "prefixElement": 10,
+        "sourceTime": "2021-10-04T21:01:54Z",
+        "raw": {
+          "timestamp": 1633381314.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 1299 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        1299,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2100.gz:a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87:11",
+      "at": 19620.0,
+      "sequence": 25,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2100.gz",
+        "sha256": "a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87",
+        "prefixElement": 11,
+        "sourceTime": "2021-10-04T21:02:00Z",
+        "raw": {
+          "timestamp": 1633381320.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 2914 3257 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "2914:420",
+            "2914:1008",
+            "2914:2000",
+            "2914:3000",
+            "3257:3257"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        2914,
+        3257,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2100.gz:a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87:12",
+      "at": 19629.0,
+      "sequence": 26,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2100.gz",
+        "sha256": "a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87",
+        "prefixElement": 12,
+        "sourceTime": "2021-10-04T21:02:09Z",
+        "raw": {
+          "timestamp": 1633381329.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 2914 174 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "2914:420",
+            "2914:1003",
+            "2914:2000",
+            "2914:3000"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        2914,
+        174,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2100.gz:a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87:13",
+      "at": 19642.0,
+      "sequence": 27,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2100.gz",
+        "sha256": "a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87",
+        "prefixElement": 13,
+        "sourceTime": "2021-10-04T21:02:22Z",
+        "raw": {
+          "timestamp": 1633381342.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 2914 174 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "2914:420",
+            "2914:1006",
+            "2914:2000",
+            "2914:3000"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        2914,
+        174,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2100.gz:a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87:14",
+      "at": 19650.0,
+      "sequence": 28,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2100.gz",
+        "sha256": "a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87",
+        "prefixElement": 14,
+        "sourceTime": "2021-10-04T21:02:30Z",
+        "raw": {
+          "timestamp": 1633381350.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 2914 174 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "2914:420",
+            "2914:1206",
+            "2914:2203",
+            "2914:3200"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        2914,
+        174,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2100.gz:a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87:15",
+      "at": 19665.0,
+      "sequence": 29,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2100.gz",
+        "sha256": "a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87",
+        "prefixElement": 15,
+        "sourceTime": "2021-10-04T21:02:45Z",
+        "raw": {
+          "timestamp": 1633381365.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 2914 174 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "2914:420",
+            "2914:1201",
+            "2914:2202",
+            "2914:3200"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        2914,
+        174,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2100.gz:a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87:16",
+      "at": 19665.0,
+      "sequence": 30,
+      "observerId": "rrc06:202.249.2.20:4777",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2100.gz",
+        "sha256": "a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87",
+        "prefixElement": 16,
+        "sourceTime": "2021-10-04T21:02:45Z",
+        "raw": {
+          "timestamp": 1633381365.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.20",
+          "peer_asn": 4777,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.110",
+          "as_path": "4777 2516 1299 174 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        4777,
+        2516,
+        1299,
+        174,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2100.gz:a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87:17",
+      "at": 19670.0,
+      "sequence": 31,
+      "observerId": "rrc06:202.249.2.169:2497",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2100.gz",
+        "sha256": "a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87",
+        "prefixElement": 17,
+        "sourceTime": "2021-10-04T21:02:50Z",
+        "raw": {
+          "timestamp": 1633381370.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.169",
+          "peer_asn": 2497,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.169",
+          "as_path": "2497 2914 174 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        2497,
+        2914,
+        174,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2100.gz:a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87:18",
+      "at": 19673.0,
+      "sequence": 32,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2100.gz",
+        "sha256": "a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87",
+        "prefixElement": 18,
+        "sourceTime": "2021-10-04T21:02:53Z",
+        "raw": {
+          "timestamp": 1633381373.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 2914 174 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "2914:420",
+            "2914:1204",
+            "2914:2205",
+            "2914:3200"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        2914,
+        174,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2100.gz:a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87:19",
+      "at": 19675.0,
+      "sequence": 33,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2100.gz",
+        "sha256": "a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87",
+        "prefixElement": 19,
+        "sourceTime": "2021-10-04T21:02:55Z",
+        "raw": {
+          "timestamp": 1633381375.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 4713 2914 174 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        4713,
+        2914,
+        174,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2100.gz:a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87:20",
+      "at": 19678.0,
+      "sequence": 34,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2100.gz",
+        "sha256": "a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87",
+        "prefixElement": 20,
+        "sourceTime": "2021-10-04T21:02:58Z",
+        "raw": {
+          "timestamp": 1633381378.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 1299 174 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        1299,
+        174,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2100.gz:a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87:21",
+      "at": 19683.0,
+      "sequence": 35,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "withdrawal",
+      "evidence": {
+        "archive": "updates.20211004.2100.gz",
+        "sha256": "a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87",
+        "prefixElement": 21,
+        "sourceTime": "2021-10-04T21:03:03Z",
+        "raw": {
+          "timestamp": 1633381383.0,
+          "elem_type": "W",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": null,
+          "as_path": null,
+          "origin_asns": null,
+          "origin": null,
+          "local_pref": null,
+          "med": null,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      }
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2100.gz:a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87:22",
+      "at": 19695.0,
+      "sequence": 36,
+      "observerId": "rrc06:202.249.2.20:4777",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2100.gz",
+        "sha256": "a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87",
+        "prefixElement": 22,
+        "sourceTime": "2021-10-04T21:03:15Z",
+        "raw": {
+          "timestamp": 1633381395.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.20",
+          "peer_asn": 4777,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.169",
+          "as_path": "4777 2497 2914 174 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        4777,
+        2497,
+        2914,
+        174,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2100.gz:a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87:23",
+      "at": 19730.0,
+      "sequence": 37,
+      "observerId": "rrc06:202.249.2.169:2497",
+      "kind": "withdrawal",
+      "evidence": {
+        "archive": "updates.20211004.2100.gz",
+        "sha256": "a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87",
+        "prefixElement": 23,
+        "sourceTime": "2021-10-04T21:03:50Z",
+        "raw": {
+          "timestamp": 1633381430.0,
+          "elem_type": "W",
+          "peer_ip": "202.249.2.169",
+          "peer_asn": 2497,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": null,
+          "as_path": null,
+          "origin_asns": null,
+          "origin": null,
+          "local_pref": null,
+          "med": null,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      }
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2100.gz:a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87:24",
+      "at": 19757.0,
+      "sequence": 38,
+      "observerId": "rrc06:202.249.2.20:4777",
+      "kind": "withdrawal",
+      "evidence": {
+        "archive": "updates.20211004.2100.gz",
+        "sha256": "a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87",
+        "prefixElement": 24,
+        "sourceTime": "2021-10-04T21:04:17Z",
+        "raw": {
+          "timestamp": 1633381457.0,
+          "elem_type": "W",
+          "peer_ip": "202.249.2.20",
+          "peer_asn": 4777,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": null,
+          "as_path": null,
+          "origin_asns": null,
+          "origin": null,
+          "local_pref": null,
+          "med": null,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      }
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2115.gz:e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f:1",
+      "at": 20547.0,
+      "sequence": 39,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2115.gz",
+        "sha256": "e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f",
+        "prefixElement": 1,
+        "sourceTime": "2021-10-04T21:17:27Z",
+        "raw": {
+          "timestamp": 1633382247.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2115.gz:e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f:2",
+      "at": 20548.0,
+      "sequence": 40,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2115.gz",
+        "sha256": "e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f",
+        "prefixElement": 2,
+        "sourceTime": "2021-10-04T21:17:28Z",
+        "raw": {
+          "timestamp": 1633382248.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2115.gz:e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f:3",
+      "at": 20559.0,
+      "sequence": 41,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2115.gz",
+        "sha256": "e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f",
+        "prefixElement": 3,
+        "sourceTime": "2021-10-04T21:17:39Z",
+        "raw": {
+          "timestamp": 1633382259.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2115.gz:e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f:4",
+      "at": 20568.0,
+      "sequence": 42,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2115.gz",
+        "sha256": "e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f",
+        "prefixElement": 4,
+        "sourceTime": "2021-10-04T21:17:48Z",
+        "raw": {
+          "timestamp": 1633382268.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2115.gz:e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f:5",
+      "at": 20568.0,
+      "sequence": 43,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2115.gz",
+        "sha256": "e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f",
+        "prefixElement": 5,
+        "sourceTime": "2021-10-04T21:17:48Z",
+        "raw": {
+          "timestamp": 1633382268.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:1",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2115.gz:e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f:6",
+      "at": 20580.0,
+      "sequence": 44,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2115.gz",
+        "sha256": "e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f",
+        "prefixElement": 6,
+        "sourceTime": "2021-10-04T21:18:00Z",
+        "raw": {
+          "timestamp": 1633382280.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2115.gz:e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f:7",
+      "at": 20581.0,
+      "sequence": 45,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2115.gz",
+        "sha256": "e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f",
+        "prefixElement": 7,
+        "sourceTime": "2021-10-04T21:18:01Z",
+        "raw": {
+          "timestamp": 1633382281.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2115.gz:e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f:8",
+      "at": 20582.0,
+      "sequence": 46,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2115.gz",
+        "sha256": "e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f",
+        "prefixElement": 8,
+        "sourceTime": "2021-10-04T21:18:02Z",
+        "raw": {
+          "timestamp": 1633382282.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2115.gz:e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f:9",
+      "at": 20586.0,
+      "sequence": 47,
+      "observerId": "rrc06:202.249.2.20:4777",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2115.gz",
+        "sha256": "e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f",
+        "prefixElement": 9,
+        "sourceTime": "2021-10-04T21:18:06Z",
+        "raw": {
+          "timestamp": 1633382286.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.20",
+          "peer_asn": 4777,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.110",
+          "as_path": "4777 2516 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        4777,
+        2516,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2115.gz:e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f:10",
+      "at": 20598.0,
+      "sequence": 48,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2115.gz",
+        "sha256": "e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f",
+        "prefixElement": 10,
+        "sourceTime": "2021-10-04T21:18:18Z",
+        "raw": {
+          "timestamp": 1633382298.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:1",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2115.gz:e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f:11",
+      "at": 20612.0,
+      "sequence": 49,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2115.gz",
+        "sha256": "e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f",
+        "prefixElement": 11,
+        "sourceTime": "2021-10-04T21:18:32Z",
+        "raw": {
+          "timestamp": 1633382312.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2115.gz:e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f:12",
+      "at": 20613.0,
+      "sequence": 50,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2115.gz",
+        "sha256": "e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f",
+        "prefixElement": 12,
+        "sourceTime": "2021-10-04T21:18:33Z",
+        "raw": {
+          "timestamp": 1633382313.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2115.gz:e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f:13",
+      "at": 20617.0,
+      "sequence": 51,
+      "observerId": "rrc06:202.249.2.20:4777",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2115.gz",
+        "sha256": "e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f",
+        "prefixElement": 13,
+        "sourceTime": "2021-10-04T21:18:37Z",
+        "raw": {
+          "timestamp": 1633382317.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.20",
+          "peer_asn": 4777,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.110",
+          "as_path": "4777 2516 3257 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        4777,
+        2516,
+        3257,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2115.gz:e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f:14",
+      "at": 20618.0,
+      "sequence": 52,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2115.gz",
+        "sha256": "e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f",
+        "prefixElement": 14,
+        "sourceTime": "2021-10-04T21:18:38Z",
+        "raw": {
+          "timestamp": 1633382318.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:1",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2115.gz:e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f:15",
+      "at": 20635.0,
+      "sequence": 53,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2115.gz",
+        "sha256": "e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f",
+        "prefixElement": 15,
+        "sourceTime": "2021-10-04T21:18:55Z",
+        "raw": {
+          "timestamp": 1633382335.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2115.gz:e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f:16",
+      "at": 20645.0,
+      "sequence": 54,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2115.gz",
+        "sha256": "e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f",
+        "prefixElement": 16,
+        "sourceTime": "2021-10-04T21:19:05Z",
+        "raw": {
+          "timestamp": 1633382345.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:1",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2115.gz:e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f:17",
+      "at": 20656.0,
+      "sequence": 55,
+      "observerId": "rrc06:202.249.2.169:2497",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2115.gz",
+        "sha256": "e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f",
+        "prefixElement": 17,
+        "sourceTime": "2021-10-04T21:19:16Z",
+        "raw": {
+          "timestamp": 1633382356.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.169",
+          "peer_asn": 2497,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.169",
+          "as_path": "2497 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        2497,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2115.gz:e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f:18",
+      "at": 20686.0,
+      "sequence": 56,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2115.gz",
+        "sha256": "e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f",
+        "prefixElement": 18,
+        "sourceTime": "2021-10-04T21:19:46Z",
+        "raw": {
+          "timestamp": 1633382386.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2115.gz:e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f:19",
+      "at": 20686.0,
+      "sequence": 57,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2115.gz",
+        "sha256": "e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f",
+        "prefixElement": 19,
+        "sourceTime": "2021-10-04T21:19:46Z",
+        "raw": {
+          "timestamp": 1633382386.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2115.gz:e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f:20",
+      "at": 20691.0,
+      "sequence": 58,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2115.gz",
+        "sha256": "e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f",
+        "prefixElement": 20,
+        "sourceTime": "2021-10-04T21:19:51Z",
+        "raw": {
+          "timestamp": 1633382391.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 1299 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        1299,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2115.gz:e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f:21",
+      "at": 20692.0,
+      "sequence": 59,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2115.gz",
+        "sha256": "e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f",
+        "prefixElement": 21,
+        "sourceTime": "2021-10-04T21:19:52Z",
+        "raw": {
+          "timestamp": 1633382392.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 265892 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        265892,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2115.gz:e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f:22",
+      "at": 20698.0,
+      "sequence": 60,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2115.gz",
+        "sha256": "e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f",
+        "prefixElement": 22,
+        "sourceTime": "2021-10-04T21:19:58Z",
+        "raw": {
+          "timestamp": 1633382398.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:1",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:1",
+      "at": 20709.0,
+      "sequence": 61,
+      "observerId": "rrc06:202.249.2.20:4777",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 1,
+        "sourceTime": "2021-10-04T21:20:09Z",
+        "raw": {
+          "timestamp": 1633382409.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.20",
+          "peer_asn": 4777,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.110",
+          "as_path": "4777 2516 1299 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        4777,
+        2516,
+        1299,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:2",
+      "at": 20711.0,
+      "sequence": 62,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 2,
+        "sourceTime": "2021-10-04T21:20:11Z",
+        "raw": {
+          "timestamp": 1633382411.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:3",
+      "at": 20712.0,
+      "sequence": 63,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 3,
+        "sourceTime": "2021-10-04T21:20:12Z",
+        "raw": {
+          "timestamp": 1633382412.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:4",
+      "at": 20713.0,
+      "sequence": 64,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 4,
+        "sourceTime": "2021-10-04T21:20:13Z",
+        "raw": {
+          "timestamp": 1633382413.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:5",
+      "at": 20723.0,
+      "sequence": 65,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 5,
+        "sourceTime": "2021-10-04T21:20:23Z",
+        "raw": {
+          "timestamp": 1633382423.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:1",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:6",
+      "at": 20737.0,
+      "sequence": 66,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 6,
+        "sourceTime": "2021-10-04T21:20:37Z",
+        "raw": {
+          "timestamp": 1633382437.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:7",
+      "at": 20751.0,
+      "sequence": 67,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 7,
+        "sourceTime": "2021-10-04T21:20:51Z",
+        "raw": {
+          "timestamp": 1633382451.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:1",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:8",
+      "at": 20767.0,
+      "sequence": 68,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 8,
+        "sourceTime": "2021-10-04T21:21:07Z",
+        "raw": {
+          "timestamp": 1633382467.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:9",
+      "at": 20782.0,
+      "sequence": 69,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 9,
+        "sourceTime": "2021-10-04T21:21:22Z",
+        "raw": {
+          "timestamp": 1633382482.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:1",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:10",
+      "at": 20795.0,
+      "sequence": 70,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 10,
+        "sourceTime": "2021-10-04T21:21:35Z",
+        "raw": {
+          "timestamp": 1633382495.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:11",
+      "at": 20795.0,
+      "sequence": 71,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 11,
+        "sourceTime": "2021-10-04T21:21:35Z",
+        "raw": {
+          "timestamp": 1633382495.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:12",
+      "at": 20801.0,
+      "sequence": 72,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 12,
+        "sourceTime": "2021-10-04T21:21:41Z",
+        "raw": {
+          "timestamp": 1633382501.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 1299 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        1299,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:13",
+      "at": 20808.0,
+      "sequence": 73,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 13,
+        "sourceTime": "2021-10-04T21:21:48Z",
+        "raw": {
+          "timestamp": 1633382508.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:1",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:14",
+      "at": 20820.0,
+      "sequence": 74,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 14,
+        "sourceTime": "2021-10-04T21:22:00Z",
+        "raw": {
+          "timestamp": 1633382520.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:15",
+      "at": 20820.0,
+      "sequence": 75,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 15,
+        "sourceTime": "2021-10-04T21:22:00Z",
+        "raw": {
+          "timestamp": 1633382520.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:16",
+      "at": 20832.0,
+      "sequence": 76,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 16,
+        "sourceTime": "2021-10-04T21:22:12Z",
+        "raw": {
+          "timestamp": 1633382532.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:1",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:17",
+      "at": 20850.0,
+      "sequence": 77,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 17,
+        "sourceTime": "2021-10-04T21:22:30Z",
+        "raw": {
+          "timestamp": 1633382550.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:18",
+      "at": 20856.0,
+      "sequence": 78,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 18,
+        "sourceTime": "2021-10-04T21:22:36Z",
+        "raw": {
+          "timestamp": 1633382556.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 1299 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        1299,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:19",
+      "at": 20859.0,
+      "sequence": 79,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 19,
+        "sourceTime": "2021-10-04T21:22:39Z",
+        "raw": {
+          "timestamp": 1633382559.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:20",
+      "at": 20859.0,
+      "sequence": 80,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 20,
+        "sourceTime": "2021-10-04T21:22:39Z",
+        "raw": {
+          "timestamp": 1633382559.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:1",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:21",
+      "at": 20873.0,
+      "sequence": 81,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 21,
+        "sourceTime": "2021-10-04T21:22:53Z",
+        "raw": {
+          "timestamp": 1633382573.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:22",
+      "at": 20874.0,
+      "sequence": 82,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 22,
+        "sourceTime": "2021-10-04T21:22:54Z",
+        "raw": {
+          "timestamp": 1633382574.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:23",
+      "at": 20887.0,
+      "sequence": 83,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 23,
+        "sourceTime": "2021-10-04T21:23:07Z",
+        "raw": {
+          "timestamp": 1633382587.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:24",
+      "at": 20890.0,
+      "sequence": 84,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 24,
+        "sourceTime": "2021-10-04T21:23:10Z",
+        "raw": {
+          "timestamp": 1633382590.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:2",
+            "24115:1001:1",
+            "24115:1002:1",
+            "24115:1003:0",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:25",
+      "at": 20893.0,
+      "sequence": 85,
+      "observerId": "rrc06:202.249.2.20:4777",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 25,
+        "sourceTime": "2021-10-04T21:23:13Z",
+        "raw": {
+          "timestamp": 1633382593.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.20",
+          "peer_asn": 4777,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.110",
+          "as_path": "4777 2516 3356 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        4777,
+        2516,
+        3356,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:26",
+      "at": 20899.0,
+      "sequence": 86,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 26,
+        "sourceTime": "2021-10-04T21:23:19Z",
+        "raw": {
+          "timestamp": 1633382599.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:27",
+      "at": 20904.0,
+      "sequence": 87,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 27,
+        "sourceTime": "2021-10-04T21:23:24Z",
+        "raw": {
+          "timestamp": 1633382604.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:28",
+      "at": 20905.0,
+      "sequence": 88,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 28,
+        "sourceTime": "2021-10-04T21:23:25Z",
+        "raw": {
+          "timestamp": 1633382605.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:29",
+      "at": 20913.0,
+      "sequence": 89,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 29,
+        "sourceTime": "2021-10-04T21:23:33Z",
+        "raw": {
+          "timestamp": 1633382613.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 1299 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        1299,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:30",
+      "at": 20913.0,
+      "sequence": 90,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 30,
+        "sourceTime": "2021-10-04T21:23:33Z",
+        "raw": {
+          "timestamp": 1633382613.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:1",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:31",
+      "at": 20924.0,
+      "sequence": 91,
+      "observerId": "rrc06:202.249.2.20:4777",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 31,
+        "sourceTime": "2021-10-04T21:23:44Z",
+        "raw": {
+          "timestamp": 1633382624.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.20",
+          "peer_asn": 4777,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.110",
+          "as_path": "4777 2516 1299 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        4777,
+        2516,
+        1299,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:32",
+      "at": 20925.0,
+      "sequence": 92,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 32,
+        "sourceTime": "2021-10-04T21:23:45Z",
+        "raw": {
+          "timestamp": 1633382625.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:33",
+      "at": 20926.0,
+      "sequence": 93,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 33,
+        "sourceTime": "2021-10-04T21:23:46Z",
+        "raw": {
+          "timestamp": 1633382626.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:34",
+      "at": 20940.0,
+      "sequence": 94,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 34,
+        "sourceTime": "2021-10-04T21:24:00Z",
+        "raw": {
+          "timestamp": 1633382640.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:1",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:35",
+      "at": 20979.0,
+      "sequence": 95,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 35,
+        "sourceTime": "2021-10-04T21:24:39Z",
+        "raw": {
+          "timestamp": 1633382679.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:36",
+      "at": 20979.0,
+      "sequence": 96,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 36,
+        "sourceTime": "2021-10-04T21:24:39Z",
+        "raw": {
+          "timestamp": 1633382679.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:1",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2120.gz:8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9:37",
+      "at": 20993.0,
+      "sequence": 97,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2120.gz",
+        "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+        "prefixElement": 37,
+        "sourceTime": "2021-10-04T21:24:53Z",
+        "raw": {
+          "timestamp": 1633382693.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:1",
+      "at": 21011.0,
+      "sequence": 98,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 1,
+        "sourceTime": "2021-10-04T21:25:11Z",
+        "raw": {
+          "timestamp": 1633382711.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 1299 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        1299,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:2",
+      "at": 21012.0,
+      "sequence": 99,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 2,
+        "sourceTime": "2021-10-04T21:25:12Z",
+        "raw": {
+          "timestamp": 1633382712.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:3",
+      "at": 21013.0,
+      "sequence": 100,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 3,
+        "sourceTime": "2021-10-04T21:25:13Z",
+        "raw": {
+          "timestamp": 1633382713.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:4",
+      "at": 21016.0,
+      "sequence": 101,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 4,
+        "sourceTime": "2021-10-04T21:25:16Z",
+        "raw": {
+          "timestamp": 1633382716.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:1",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:5",
+      "at": 21036.0,
+      "sequence": 102,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 5,
+        "sourceTime": "2021-10-04T21:25:36Z",
+        "raw": {
+          "timestamp": 1633382736.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 1299 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        1299,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:6",
+      "at": 21041.0,
+      "sequence": 103,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 6,
+        "sourceTime": "2021-10-04T21:25:41Z",
+        "raw": {
+          "timestamp": 1633382741.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:7",
+      "at": 21054.0,
+      "sequence": 104,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 7,
+        "sourceTime": "2021-10-04T21:25:54Z",
+        "raw": {
+          "timestamp": 1633382754.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:1",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:8",
+      "at": 21056.0,
+      "sequence": 105,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 8,
+        "sourceTime": "2021-10-04T21:25:56Z",
+        "raw": {
+          "timestamp": 1633382756.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:9",
+      "at": 21063.0,
+      "sequence": 106,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 9,
+        "sourceTime": "2021-10-04T21:26:03Z",
+        "raw": {
+          "timestamp": 1633382763.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 3491 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        3491,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:10",
+      "at": 21068.0,
+      "sequence": 107,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 10,
+        "sourceTime": "2021-10-04T21:26:08Z",
+        "raw": {
+          "timestamp": 1633382768.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:11",
+      "at": 21078.0,
+      "sequence": 108,
+      "observerId": "rrc06:202.249.2.20:4777",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 11,
+        "sourceTime": "2021-10-04T21:26:18Z",
+        "raw": {
+          "timestamp": 1633382778.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.20",
+          "peer_asn": 4777,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.110",
+          "as_path": "4777 2516 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        4777,
+        2516,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:12",
+      "at": 21079.0,
+      "sequence": 109,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 12,
+        "sourceTime": "2021-10-04T21:26:19Z",
+        "raw": {
+          "timestamp": 1633382779.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:1",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:13",
+      "at": 21086.0,
+      "sequence": 110,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 13,
+        "sourceTime": "2021-10-04T21:26:26Z",
+        "raw": {
+          "timestamp": 1633382786.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 3491 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        3491,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:14",
+      "at": 21104.0,
+      "sequence": 111,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 14,
+        "sourceTime": "2021-10-04T21:26:44Z",
+        "raw": {
+          "timestamp": 1633382804.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:15",
+      "at": 21108.0,
+      "sequence": 112,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 15,
+        "sourceTime": "2021-10-04T21:26:48Z",
+        "raw": {
+          "timestamp": 1633382808.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:16",
+      "at": 21119.0,
+      "sequence": 113,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 16,
+        "sourceTime": "2021-10-04T21:26:59Z",
+        "raw": {
+          "timestamp": 1633382819.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 3491 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        3491,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:17",
+      "at": 21130.0,
+      "sequence": 114,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 17,
+        "sourceTime": "2021-10-04T21:27:10Z",
+        "raw": {
+          "timestamp": 1633382830.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:18",
+      "at": 21130.0,
+      "sequence": 115,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 18,
+        "sourceTime": "2021-10-04T21:27:10Z",
+        "raw": {
+          "timestamp": 1633382830.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:1",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:19",
+      "at": 21142.0,
+      "sequence": 116,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 19,
+        "sourceTime": "2021-10-04T21:27:22Z",
+        "raw": {
+          "timestamp": 1633382842.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:20",
+      "at": 21143.0,
+      "sequence": 117,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 20,
+        "sourceTime": "2021-10-04T21:27:23Z",
+        "raw": {
+          "timestamp": 1633382843.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:21",
+      "at": 21154.0,
+      "sequence": 118,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 21,
+        "sourceTime": "2021-10-04T21:27:34Z",
+        "raw": {
+          "timestamp": 1633382854.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:1",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:22",
+      "at": 21166.0,
+      "sequence": 119,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 22,
+        "sourceTime": "2021-10-04T21:27:46Z",
+        "raw": {
+          "timestamp": 1633382866.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:23",
+      "at": 21170.0,
+      "sequence": 120,
+      "observerId": "rrc06:202.249.2.20:4777",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 23,
+        "sourceTime": "2021-10-04T21:27:50Z",
+        "raw": {
+          "timestamp": 1633382870.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.20",
+          "peer_asn": 4777,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.110",
+          "as_path": "4777 2516 3356 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        4777,
+        2516,
+        3356,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:24",
+      "at": 21179.0,
+      "sequence": 121,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 24,
+        "sourceTime": "2021-10-04T21:27:59Z",
+        "raw": {
+          "timestamp": 1633382879.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:1",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:25",
+      "at": 21191.0,
+      "sequence": 122,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 25,
+        "sourceTime": "2021-10-04T21:28:11Z",
+        "raw": {
+          "timestamp": 1633382891.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 1299 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        1299,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:26",
+      "at": 21192.0,
+      "sequence": 123,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 26,
+        "sourceTime": "2021-10-04T21:28:12Z",
+        "raw": {
+          "timestamp": 1633382892.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 3491 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        3491,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:27",
+      "at": 21192.0,
+      "sequence": 124,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 27,
+        "sourceTime": "2021-10-04T21:28:12Z",
+        "raw": {
+          "timestamp": 1633382892.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:28",
+      "at": 21201.0,
+      "sequence": 125,
+      "observerId": "rrc06:202.249.2.20:4777",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 28,
+        "sourceTime": "2021-10-04T21:28:21Z",
+        "raw": {
+          "timestamp": 1633382901.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.20",
+          "peer_asn": 4777,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.110",
+          "as_path": "4777 2516 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        4777,
+        2516,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:29",
+      "at": 21209.0,
+      "sequence": 126,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 29,
+        "sourceTime": "2021-10-04T21:28:29Z",
+        "raw": {
+          "timestamp": 1633382909.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 1299 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        1299,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:30",
+      "at": 21209.0,
+      "sequence": 127,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 30,
+        "sourceTime": "2021-10-04T21:28:29Z",
+        "raw": {
+          "timestamp": 1633382909.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 3491 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        3491,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:31",
+      "at": 21214.0,
+      "sequence": 128,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 31,
+        "sourceTime": "2021-10-04T21:28:34Z",
+        "raw": {
+          "timestamp": 1633382914.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 2914 3491 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "2914:420",
+            "2914:1404",
+            "2914:2405",
+            "2914:3400",
+            "3491:400",
+            "3491:412",
+            "3491:9084",
+            "3491:9089",
+            "3491:53900",
+            "3491:62210",
+            "3491:62220"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        2914,
+        3491,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:32",
+      "at": 21216.0,
+      "sequence": 129,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 32,
+        "sourceTime": "2021-10-04T21:28:36Z",
+        "raw": {
+          "timestamp": 1633382916.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:33",
+      "at": 21232.0,
+      "sequence": 130,
+      "observerId": "rrc06:202.249.2.20:4777",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 33,
+        "sourceTime": "2021-10-04T21:28:52Z",
+        "raw": {
+          "timestamp": 1633382932.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.20",
+          "peer_asn": 4777,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.110",
+          "as_path": "4777 2516 3491 3491 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        4777,
+        2516,
+        3491,
+        3491,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:34",
+      "at": 21232.0,
+      "sequence": 131,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 34,
+        "sourceTime": "2021-10-04T21:28:52Z",
+        "raw": {
+          "timestamp": 1633382932.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 3491 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        3491,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:35",
+      "at": 21237.0,
+      "sequence": 132,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 35,
+        "sourceTime": "2021-10-04T21:28:57Z",
+        "raw": {
+          "timestamp": 1633382937.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:36",
+      "at": 21237.0,
+      "sequence": 133,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 36,
+        "sourceTime": "2021-10-04T21:28:57Z",
+        "raw": {
+          "timestamp": 1633382937.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:1",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:37",
+      "at": 21249.0,
+      "sequence": 134,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 37,
+        "sourceTime": "2021-10-04T21:29:09Z",
+        "raw": {
+          "timestamp": 1633382949.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:38",
+      "at": 21249.0,
+      "sequence": 135,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 38,
+        "sourceTime": "2021-10-04T21:29:09Z",
+        "raw": {
+          "timestamp": 1633382949.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:39",
+      "at": 21260.0,
+      "sequence": 136,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 39,
+        "sourceTime": "2021-10-04T21:29:20Z",
+        "raw": {
+          "timestamp": 1633382960.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 3491 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        3491,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:40",
+      "at": 21262.0,
+      "sequence": 137,
+      "observerId": "rrc06:202.249.2.20:4777",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 40,
+        "sourceTime": "2021-10-04T21:29:22Z",
+        "raw": {
+          "timestamp": 1633382962.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.20",
+          "peer_asn": 4777,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.110",
+          "as_path": "4777 2516 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        4777,
+        2516,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:41",
+      "at": 21262.0,
+      "sequence": 138,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 41,
+        "sourceTime": "2021-10-04T21:29:22Z",
+        "raw": {
+          "timestamp": 1633382962.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:1",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:42",
+      "at": 21274.0,
+      "sequence": 139,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 42,
+        "sourceTime": "2021-10-04T21:29:34Z",
+        "raw": {
+          "timestamp": 1633382974.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:43",
+      "at": 21274.0,
+      "sequence": 140,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 43,
+        "sourceTime": "2021-10-04T21:29:34Z",
+        "raw": {
+          "timestamp": 1633382974.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 3491 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": null,
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        3491,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:44",
+      "at": 21275.0,
+      "sequence": 141,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "path-change",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 44,
+        "sourceTime": "2021-10-04T21:29:35Z",
+        "raw": {
+          "timestamp": 1633382975.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:2",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:45",
+      "at": 21275.0,
+      "sequence": 142,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 45,
+        "sourceTime": "2021-10-04T21:29:35Z",
+        "raw": {
+          "timestamp": 1633382975.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:2",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    },
+    {
+      "id": "ris:rrc06:updates.20211004.2125.gz:df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a:46",
+      "at": 21287.0,
+      "sequence": 143,
+      "observerId": "rrc06:202.249.2.185:25152",
+      "kind": "announcement",
+      "evidence": {
+        "archive": "updates.20211004.2125.gz",
+        "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+        "prefixElement": 46,
+        "sourceTime": "2021-10-04T21:29:47Z",
+        "raw": {
+          "timestamp": 1633382987.0,
+          "elem_type": "A",
+          "peer_ip": "202.249.2.185",
+          "peer_asn": 25152,
+          "peer_bgp_id": null,
+          "prefix": "129.134.30.0/24",
+          "next_hop": "202.249.2.185",
+          "as_path": "25152 6939 32934",
+          "origin_asns": [
+            32934
+          ],
+          "origin": "IGP",
+          "local_pref": 0,
+          "med": 0,
+          "communities": [
+            "24115:1000:1",
+            "24115:1001:1",
+            "24115:1002:1",
+            "24115:1003:1",
+            "24115:1004:32934"
+          ],
+          "atomic": "NAG",
+          "aggr_asn": null,
+          "aggr_ip": null,
+          "only_to_customer": null
+        }
+      },
+      "path": [
+        25152,
+        6939,
+        32934
+      ]
+    }
+  ],
+  "warmupEvents": 0
+}

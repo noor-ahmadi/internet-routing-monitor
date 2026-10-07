@@ -1,0 +1,1328 @@
+{
+  "schemaVersion": 1,
+  "source": "RIPE NCC Routing Information Service (RIS)",
+  "collector": "rrc06",
+  "prefix": "129.134.30.0/24",
+  "baselineNominalTime": "2021-10-04T08:00:00Z",
+  "baselineCaptureTime": "2021-10-04T08:00:00Z",
+  "replayStart": "2021-10-04T15:35:00Z",
+  "replayEndExclusive": "2021-10-04T21:30:00Z",
+  "parser": {
+    "name": "pybgpkit-parser",
+    "version": "0.18.0"
+  },
+  "terms": "https://www.ripe.net/about-us/legal/terms-of-service/",
+  "copyright": "https://www.ripe.net/about-us/legal/copyright-statement/",
+  "commercialTerms": "https://www.ripe.net/analyse/internet-measurements/routing-information-service-ris/commercial-use/",
+  "scope": "Exact prefix, one collector, RIB-present peers with no recorded session transitions. Archive coverage does not prove uninterrupted external capture or global reachability.",
+  "replaySha256": "cac8f879b68316a88cc06e842b088fed8e6238da43bd9ec07fa6bd6c8fdf98f8",
+  "observers": 3,
+  "warmupEvents": 0,
+  "replayEvents": 144,
+  "archives": [
+    {
+      "name": "bview.20211004.0800.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/bview.20211004.0800.gz",
+      "bytes": 30140843,
+      "sha256": "085114bd852ae58065853241d4384e9ca3cef104dd3134c33dd25d33b436c427",
+      "records": 1021679,
+      "prefixElements": 3
+    },
+    {
+      "name": "updates.20211004.0800.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.0800.gz",
+      "bytes": 70701,
+      "sha256": "027bb6cbb43ca60bc170f862c21ccf24c9e01117c41f6ccb266fde85cf4efb3d",
+      "records": 4015,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.0805.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.0805.gz",
+      "bytes": 54418,
+      "sha256": "bae6631b777164620f3b4094261bb19cd751f07db1934deb35ef57dc663dc1da",
+      "records": 3472,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.0810.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.0810.gz",
+      "bytes": 55823,
+      "sha256": "cc866709dabcfb06954a48938df6b96b598f62832229c5a2a7ca4d335d869a44",
+      "records": 3458,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.0815.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.0815.gz",
+      "bytes": 50494,
+      "sha256": "9bb8753cae49a184ad0ebe99c7ddbd9b6e09d2adc7bad9571c3a46fec5f32073",
+      "records": 3119,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.0820.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.0820.gz",
+      "bytes": 64741,
+      "sha256": "956db6e9d5719c6ad0ba938f6608c7afd70aa7beae3efc7fb4e965500b679da1",
+      "records": 3323,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.0825.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.0825.gz",
+      "bytes": 52875,
+      "sha256": "3e0756176fede09935e64086deddf8bae780d628337a3eb506089fe9aa786efa",
+      "records": 3281,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.0830.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.0830.gz",
+      "bytes": 54222,
+      "sha256": "f948d2318172ffad2e679743515d53c793919eb62cea6ab483d866d0771600e0",
+      "records": 3469,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.0835.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.0835.gz",
+      "bytes": 54960,
+      "sha256": "596d034f5c5d4545b076c322b88ddcf18c6d0c9be876065421a534cc7a65256b",
+      "records": 3324,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.0840.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.0840.gz",
+      "bytes": 57578,
+      "sha256": "78d7409aa2f41478f66877a11db52b9d32716394c76dcdc2da8c8248da2b86cb",
+      "records": 3377,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.0845.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.0845.gz",
+      "bytes": 52578,
+      "sha256": "ff109b92cf32b5e6a8a17b5cd30ed86272e50948cc1dacd2f41a6f8697de34ff",
+      "records": 3354,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.0850.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.0850.gz",
+      "bytes": 55147,
+      "sha256": "73bb8cb0bb8d86ec09d9c2b1a85f8584404b7790d49bb8ccbe016dda9dec161e",
+      "records": 3500,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.0855.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.0855.gz",
+      "bytes": 66309,
+      "sha256": "e51062eb2a5505e91f057a4ef43a9347ca3a4119adef86638fb20fc80286dcac",
+      "records": 3883,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.0900.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.0900.gz",
+      "bytes": 64076,
+      "sha256": "e2fae58e43beb82b024d3d7d276a1c1ca2d2c1718ef34c27c1b793a62a368525",
+      "records": 3516,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.0905.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.0905.gz",
+      "bytes": 50712,
+      "sha256": "dd1e24cfd7c318b1d8184962d05ed51801c2480d9f70d0a3f64ca501e71d75d7",
+      "records": 3163,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.0910.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.0910.gz",
+      "bytes": 59886,
+      "sha256": "3e5ee88b6b1971685f0c2f42db34547a4ae0ebb5b8b02d70d29eefa001876527",
+      "records": 3577,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.0915.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.0915.gz",
+      "bytes": 108497,
+      "sha256": "db3cade1cd191ff5b2717e0636f9865cb269342508053da12599ccaf2b9af3bb",
+      "records": 5125,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.0920.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.0920.gz",
+      "bytes": 186089,
+      "sha256": "446e17d8ee713e2b0ad5fe828ab5dd49a62ac7f4c486904faab57b809c9ba0b9",
+      "records": 8179,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.0925.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.0925.gz",
+      "bytes": 131869,
+      "sha256": "b5416d78f74c3e12734a541d9934f5d856cf0021d0df6271a6a48aec0cde2a9b",
+      "records": 6352,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.0930.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.0930.gz",
+      "bytes": 60610,
+      "sha256": "77cd40e777c2db5bf0ca4a5ddebddf61a10b7e3e8984cf0bb42abf82186b8347",
+      "records": 3805,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.0935.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.0935.gz",
+      "bytes": 59784,
+      "sha256": "d4c3dbe19a74fe1bca98f767f95c87221389c5ffac4fac6077492a4cc2c359b8",
+      "records": 3573,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.0940.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.0940.gz",
+      "bytes": 54002,
+      "sha256": "0556e1cbad2df7cc2193cc38ea8c9b3fba84bebb3f54279a79a7b9b2661e3076",
+      "records": 3327,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.0945.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.0945.gz",
+      "bytes": 60059,
+      "sha256": "d5064a56b5d9c3bfd97dea39184bb1aa2ad06917e53b4aaafcd84f3337f7cfdc",
+      "records": 3679,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.0950.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.0950.gz",
+      "bytes": 49534,
+      "sha256": "83f2e96648ee1ee8045c9202188c21f4fbc2bef2f0e64d9887300799db5d500b",
+      "records": 3063,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.0955.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.0955.gz",
+      "bytes": 53973,
+      "sha256": "5555ab6669fe65a2bf7cf31105da534a6afa1efa310d2cb35403a7fa535207ac",
+      "records": 3396,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1000.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1000.gz",
+      "bytes": 62278,
+      "sha256": "6f7cf263a9f56fa9a650fc4ce50b2a2261d8e72c9cb7f6a1d7c84a7a3f0eead7",
+      "records": 3633,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1005.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1005.gz",
+      "bytes": 57865,
+      "sha256": "e341f3834d9031b16495144a830d1ef586a8a0dc34d35f2fafa4b97c08524622",
+      "records": 3497,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1010.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1010.gz",
+      "bytes": 54486,
+      "sha256": "3513a6194bcbbcfe7570d53d075c7dbcd9d77d03697bca4e29088d2457950df3",
+      "records": 3335,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1015.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1015.gz",
+      "bytes": 60941,
+      "sha256": "f5262d6f9a6b8c126280c0bdcec518680507fd8bb4eb39ea94d0f2e5cefa4e0f",
+      "records": 3724,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1020.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1020.gz",
+      "bytes": 63090,
+      "sha256": "ad38e21d8f788feea91954b314770a01577c52af32f3baa8bc0a1108e848908e",
+      "records": 3792,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1025.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1025.gz",
+      "bytes": 62446,
+      "sha256": "f991a7ce9c22dfc80405cbc0b53c7e71d4edd055faabbc1f8c7fde480b0efe33",
+      "records": 3684,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1030.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1030.gz",
+      "bytes": 79948,
+      "sha256": "87bd089f9d88c606efd0cd4465cc0136f8e40e9948786269b56db72f1343609e",
+      "records": 4746,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1035.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1035.gz",
+      "bytes": 231732,
+      "sha256": "cbb8dfbfa670c80c349ba0f5dc6c9388506e8c7909bf05ce2236e384e353e577",
+      "records": 8274,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1040.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1040.gz",
+      "bytes": 102465,
+      "sha256": "28b15bd72a139d6937740fcbb6dc1ff38a1bf40c02191df5895dce84eaae8431",
+      "records": 5464,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1045.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1045.gz",
+      "bytes": 110043,
+      "sha256": "e2c5270b0e4ab71e8fcc7781576cdb28dfff155846290d577a0cd4e448ab89d3",
+      "records": 5936,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1050.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1050.gz",
+      "bytes": 63470,
+      "sha256": "c7a293ec7201a3092ea17aa03b24a0a19606f9132a2fb2460b63a66d40fa119a",
+      "records": 3866,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1055.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1055.gz",
+      "bytes": 69801,
+      "sha256": "2c3f0bee25f1326f84eb1b0e1e3933a20dcbb43f8e1b4f5bfbda636b111733bd",
+      "records": 4049,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1100.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1100.gz",
+      "bytes": 65849,
+      "sha256": "a3a1f65d7145593b96969e297c5b829c12aed218490ffb0033767aea61536bb8",
+      "records": 3800,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1105.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1105.gz",
+      "bytes": 63796,
+      "sha256": "ac2218b11bf50ae1f3ad00c265cd7c7bff01eac31b69c56738e39dfcdb9aa496",
+      "records": 3838,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1110.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1110.gz",
+      "bytes": 59668,
+      "sha256": "65b544b6a1eb671e6dd0f16cc462e9dc5ec04ea1bfca37a5856f6b7b9edc78a9",
+      "records": 3589,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1115.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1115.gz",
+      "bytes": 81901,
+      "sha256": "2fc699c7eee84f40b1d33684993f5bb4852d4f63562aee9395cac8a76b7dacc0",
+      "records": 4520,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1120.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1120.gz",
+      "bytes": 55837,
+      "sha256": "0ee36577526267336399a0da1bf4ae8626edef5bbc0814ba296f27b4c06cd046",
+      "records": 3277,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1125.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1125.gz",
+      "bytes": 58241,
+      "sha256": "ffd23de5192cee7d4f06d7f32a405d63db98955812aaa84c4a9962438cafb141",
+      "records": 3467,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1130.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1130.gz",
+      "bytes": 57283,
+      "sha256": "5fb082947f9b56cd7ef1a4baf12a74869aaf00300d1516fc04f6b7ce9cf9ef96",
+      "records": 3418,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1135.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1135.gz",
+      "bytes": 67291,
+      "sha256": "2afd5822721dc27553d28700e3f508d89bc449dc10dac0d1db16c2f0b0be5cb7",
+      "records": 3665,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1140.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1140.gz",
+      "bytes": 60759,
+      "sha256": "48e09695e617a278d1eaaad95286f0a0dfb3ba80489fa5a9d3a0bb45e4ee9d70",
+      "records": 3670,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1145.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1145.gz",
+      "bytes": 61244,
+      "sha256": "2241c3299dbbc2002c46dcda9d922f41e9c6aad9d56d59d15c44aaac7d3e51fe",
+      "records": 3876,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1150.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1150.gz",
+      "bytes": 68041,
+      "sha256": "51803d0364beb9ce092026faa0aa454248e55ad000fa2d3babf2043a46507f5c",
+      "records": 4122,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1155.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1155.gz",
+      "bytes": 64426,
+      "sha256": "b4c42b50e5ab0b2f12f60e1d7befaab4372b4ced62b0872ca245365da5c14511",
+      "records": 3945,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1200.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1200.gz",
+      "bytes": 63348,
+      "sha256": "13eae270b18d0ee80d50a906a8bf1b53ae618ac2cfd52197d3fcaf0ba1cf978b",
+      "records": 3804,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1205.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1205.gz",
+      "bytes": 54270,
+      "sha256": "1ad5458d9d5bba36c437ed36a31179a3790f5514d960da121390a32f34abefc8",
+      "records": 3364,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1210.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1210.gz",
+      "bytes": 56186,
+      "sha256": "ba21c67bbb98cc6d063248f6fadcb9b5e239bca6f970ed4be59d1deb19570fdd",
+      "records": 3419,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1215.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1215.gz",
+      "bytes": 57813,
+      "sha256": "8bc7eb88d2950700c8fbca453f89154e6728dcbde6c103a1a9dde812bf570ad5",
+      "records": 3670,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1220.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1220.gz",
+      "bytes": 59916,
+      "sha256": "333a89a6915dfeaa7d795a04914d532c9e64ae97f16eb429b28008ae4f4e4442",
+      "records": 3533,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1225.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1225.gz",
+      "bytes": 65175,
+      "sha256": "fc5d62a1b989d6cb306a3388cf98a5d611fad511dd3b1f659c16f096472a60e8",
+      "records": 3885,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1230.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1230.gz",
+      "bytes": 63288,
+      "sha256": "1a07300ea5c7bd3f4f55225c2d42528ed28e0d61ee16b01f9038ec6d263b300b",
+      "records": 3860,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1235.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1235.gz",
+      "bytes": 59607,
+      "sha256": "f2e0d278dc37b8c867df2220fe671a29cf95d0b7c2913cad1945baa623dbfd73",
+      "records": 3770,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1240.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1240.gz",
+      "bytes": 62860,
+      "sha256": "c5bb0ff7e7412387daa5bd8f17789cf81ce267da43fe37c1e75f46fed5bf0eed",
+      "records": 3661,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1245.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1245.gz",
+      "bytes": 58552,
+      "sha256": "dfeb91d8d80bbb9af0bb8d626e3665bdfebb16cb8cdf4c5ecb7f28e93cea6858",
+      "records": 3382,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1250.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1250.gz",
+      "bytes": 58003,
+      "sha256": "a6c66bea4e04be832b26f83e33a94b385452eddc68757f7ed996fb7486dcc88d",
+      "records": 3327,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1255.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1255.gz",
+      "bytes": 65272,
+      "sha256": "38505561fd8aba48e064389f106dd649e5fb0ab6e8bbc2d5ffb87d60178ccfbb",
+      "records": 3821,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1300.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1300.gz",
+      "bytes": 71457,
+      "sha256": "88f8941093c4e10994656302504b86c3b38fb2ce0efa4d264a0223991cdc7c4e",
+      "records": 3914,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1305.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1305.gz",
+      "bytes": 64680,
+      "sha256": "6441068a1422046e63a12b69a65e2fe253bb0ec41c49e64021fda4d123342048",
+      "records": 3643,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1310.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1310.gz",
+      "bytes": 66965,
+      "sha256": "5374de1ed78b5729ac8577da65bb4c0298e356123c198d697dad4eafffcf8a2e",
+      "records": 3788,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1315.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1315.gz",
+      "bytes": 83515,
+      "sha256": "84daa059c839f45dd908533e79ed80b9c3bb201d8563792de8d903c6367f72a3",
+      "records": 4492,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1320.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1320.gz",
+      "bytes": 73766,
+      "sha256": "8117ee6acb12b04cfbec037f2049d863fcafb35d620c5fe53e45927f00cd3702",
+      "records": 4244,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1325.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1325.gz",
+      "bytes": 73416,
+      "sha256": "e738553b0803fc03c5db43c0d80a41f0b282564b51518158618e315c7d024955",
+      "records": 4117,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1330.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1330.gz",
+      "bytes": 60503,
+      "sha256": "95861b6b31e5d49af74a379cfe4626fd27aa66aa23ca55f9203c3d0b1c19ec8b",
+      "records": 3379,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1335.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1335.gz",
+      "bytes": 59789,
+      "sha256": "c6f5f5c809c4d2d841db28ec96dc5350d8dc9d6b36120470f71b1624225aee86",
+      "records": 3591,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1340.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1340.gz",
+      "bytes": 80061,
+      "sha256": "7e5783f934df1a1f1a3f31d3711f46efd988699be935706b3c476c2364680adb",
+      "records": 3973,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1345.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1345.gz",
+      "bytes": 62758,
+      "sha256": "923fdcf325d3d74f34e9fde0edd689933f16610cf9d0745496e06367ba08ffc5",
+      "records": 3706,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1350.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1350.gz",
+      "bytes": 64697,
+      "sha256": "df05ecaf88d607ea0af15a84b36436f349e27fff17bb69443244ac0c95e82e79",
+      "records": 3747,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1355.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1355.gz",
+      "bytes": 62123,
+      "sha256": "2f7bfc8e57f4721b217d5e0d02ac9868b2d989082a74ea912f5f66c371efa3a9",
+      "records": 3675,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1400.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1400.gz",
+      "bytes": 79751,
+      "sha256": "8cebe2a9a06ed1b3a1eb55ed203f504bc2e6a6d94d3df28ed0d220cc6282c1c7",
+      "records": 4475,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1405.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1405.gz",
+      "bytes": 65276,
+      "sha256": "3b9cb35b926cc5ee1451f23e54095bbd4c93ec3454eed929880d6b7538918fd3",
+      "records": 3854,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1410.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1410.gz",
+      "bytes": 80187,
+      "sha256": "797a8091f7366b63babb91f79a647518421e5656e9adfd2186ada85f8acc957c",
+      "records": 4470,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1415.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1415.gz",
+      "bytes": 66178,
+      "sha256": "5c366625bb76e9fc1d82a25348e4dbcc475296243d666db45324de194a45ec87",
+      "records": 3925,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1420.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1420.gz",
+      "bytes": 61145,
+      "sha256": "2d04fa40e48452cbf99629633265c770a4209a2c047cea72824d2678cf51a912",
+      "records": 3576,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1425.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1425.gz",
+      "bytes": 70371,
+      "sha256": "5012b91e51d44e6c99f56af17a8e1193bca5d0919bbc7e9e3bbe5af7a59ace99",
+      "records": 4089,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1430.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1430.gz",
+      "bytes": 58699,
+      "sha256": "cbc4a9fd837dc3d6448b0d8af3e3046a6fbfa8de9abc65d5aa30818ae8c6e78f",
+      "records": 3377,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1435.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1435.gz",
+      "bytes": 58951,
+      "sha256": "04c40872def0c7e0e7675c10239fd0596f24320b9317715511bc018d6febb182",
+      "records": 3635,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1440.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1440.gz",
+      "bytes": 63401,
+      "sha256": "7231639f8b3dac33203db778ed2980bab6aec63f349e4a299512893ac2db4d2f",
+      "records": 3510,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1445.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1445.gz",
+      "bytes": 62225,
+      "sha256": "f0f1e7a1c77ad32bb26771a3aa82af01200451ec63332e65df18097ff29b8500",
+      "records": 3744,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1450.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1450.gz",
+      "bytes": 69640,
+      "sha256": "f161863aa0ab2e58a7824a174691e237a8e3e14e1fb8da369a5428bdf894a2a4",
+      "records": 3941,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1455.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1455.gz",
+      "bytes": 68002,
+      "sha256": "94e1e19a85b4715ef553a364d068fcd754ad170e26f59f04b5cdd218f954fc35",
+      "records": 3973,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1500.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1500.gz",
+      "bytes": 81445,
+      "sha256": "94980e9b2cc96df7b923b4b5720b324315f6939a1b2adfed1e379b766c59f2cc",
+      "records": 4303,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1505.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1505.gz",
+      "bytes": 72241,
+      "sha256": "c386f5e4c1b71934b4494932bfd6cfff3abc6351f63be558267247286a9c1373",
+      "records": 4269,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1510.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1510.gz",
+      "bytes": 67345,
+      "sha256": "a46fa2e7d1ba5f43e662a4440e28591c38ebe480a2d6b6e89eec8accf2397188",
+      "records": 4035,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1515.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1515.gz",
+      "bytes": 107478,
+      "sha256": "654e3b650f4393b376b9b174ed79cff07afd98cdd3fb08cf114a53433bf07f7c",
+      "records": 5560,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1520.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1520.gz",
+      "bytes": 66887,
+      "sha256": "48508329b5cd02bc7d32a67744bbe7e4fbfc2c4dc73a44e8742cd483a629a633",
+      "records": 3804,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1525.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1525.gz",
+      "bytes": 71713,
+      "sha256": "1dcde8be946be345a7ab31b2f4f5db8aa102936290330e5b89ba77f071824bc9",
+      "records": 4255,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1530.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1530.gz",
+      "bytes": 72570,
+      "sha256": "340883d9f9d0d67f72d5b38c84b04cefff253b4f525f6d2d56acf8a10b01d33b",
+      "records": 4188,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1535.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1535.gz",
+      "bytes": 60241,
+      "sha256": "140d97b33496c2a7e2ee884fa22c35ee9dc92f3a174480f26f6f70b8f1def0a9",
+      "records": 3457,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1540.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1540.gz",
+      "bytes": 85040,
+      "sha256": "f75f0098532ab0838ebc068639fd93ae37997cafea2df273bf2e302b53c333bd",
+      "records": 4863,
+      "prefixElements": 10
+    },
+    {
+      "name": "updates.20211004.1545.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1545.gz",
+      "bytes": 76575,
+      "sha256": "3fb15819eb5b468c19cb0e5206dfc7cc7dfdbbc3a4c80b286ba33b5dabf49913",
+      "records": 4499,
+      "prefixElements": 5
+    },
+    {
+      "name": "updates.20211004.1550.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1550.gz",
+      "bytes": 70201,
+      "sha256": "0bd13bc78687e6890ae6a1a95f028ca2be4c6ca9a69a5546858e0f39c3d6c58a",
+      "records": 4322,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1555.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1555.gz",
+      "bytes": 76680,
+      "sha256": "204b55cf02f408b5f15d39a43b76de8d5f872677565c3562ae946b6eea9d81bc",
+      "records": 4592,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1600.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1600.gz",
+      "bytes": 109024,
+      "sha256": "ff4dc73b09b3f1e16c60ce6b35560f24c839cbd0087cf26d9cdc79589cde6ae3",
+      "records": 5728,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1605.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1605.gz",
+      "bytes": 170001,
+      "sha256": "869c60a2e00a80f2b09730283a4497c973adc6c50df9368eb1bc01fc6c632d24",
+      "records": 7282,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1610.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1610.gz",
+      "bytes": 72772,
+      "sha256": "ea1ab3af4ba4c588ae93098318e9dbe0b96af8440102f48737a475ebfa422744",
+      "records": 4302,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1615.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1615.gz",
+      "bytes": 70367,
+      "sha256": "357226430fd2d3220cf4d6d0734886b0933bf0adbeab6efc43be94c0230aec85",
+      "records": 4160,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1620.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1620.gz",
+      "bytes": 71307,
+      "sha256": "8c50e47062f69f3fb1c0aee54e9a0cdf2d04ff01f8a01694160e5e9c76b13619",
+      "records": 3899,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1625.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1625.gz",
+      "bytes": 68191,
+      "sha256": "74411e0622ec54a17a4be9a3aa3524c2308f4b920f61edb9427728716b08cc91",
+      "records": 4089,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1630.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1630.gz",
+      "bytes": 67664,
+      "sha256": "7c790fefa7ccbfdff5c69eb37310d78332cbbb23f93d95a13976f27ba41e9e11",
+      "records": 3950,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1635.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1635.gz",
+      "bytes": 81167,
+      "sha256": "89c357c9bb926bea2980570495e832d0e882da532d0eb505edbe02aa41bdeb62",
+      "records": 4780,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1640.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1640.gz",
+      "bytes": 60911,
+      "sha256": "845a251f38f6293f4db30c747575110da676669b9a6ec94ffcf67b21afa45939",
+      "records": 3750,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1645.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1645.gz",
+      "bytes": 64982,
+      "sha256": "0068fbb1411a4b7f1482c6d3afb3c328ea860da9781ff641c8c9df5ed9705c0d",
+      "records": 3939,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1650.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1650.gz",
+      "bytes": 107959,
+      "sha256": "81d5bf6614d6bd6f6a0cab0855f60ea97868d638129a448506546376b77b056b",
+      "records": 6074,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1655.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1655.gz",
+      "bytes": 63300,
+      "sha256": "4b7bae87e7ddf22eb898b823bfb7c261c66448bdc62071d3e43527835083852b",
+      "records": 3971,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1700.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1700.gz",
+      "bytes": 77051,
+      "sha256": "5756fcc93e9a28c6a665937f668d1559da059e0455c45fc22b6085b619ef0204",
+      "records": 4376,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1705.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1705.gz",
+      "bytes": 71406,
+      "sha256": "75c2268860bc8ba4da5fdef88d99f6a27ed2a17d8d15b98349bd65e1df7c9969",
+      "records": 4282,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1710.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1710.gz",
+      "bytes": 79470,
+      "sha256": "739fab766cbccc9bdab6324b783b30b936b9fd88e6faa33d47d42ec9653a6cd6",
+      "records": 4497,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1715.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1715.gz",
+      "bytes": 84523,
+      "sha256": "aa58290944056d5cf6af4f983851e0447689ee7a663c034511ebe9dcb3d25056",
+      "records": 4634,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1720.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1720.gz",
+      "bytes": 78753,
+      "sha256": "f4e10714b5e8fb6edaa73d3b05427a7e802c9c894889537418683bc32a4e2613",
+      "records": 4492,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1725.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1725.gz",
+      "bytes": 72499,
+      "sha256": "2c775f50fce274feac59be8e246146c44e997a312450081d1c47b66b24dcf9c1",
+      "records": 4247,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1730.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1730.gz",
+      "bytes": 77895,
+      "sha256": "4c43e92c623c988f3f3c74b9187442428280991532a24d70921036580e6891ed",
+      "records": 4620,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1735.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1735.gz",
+      "bytes": 81229,
+      "sha256": "af469966a925739cf03653cd6b62532cc699e97582e7e324db84d84eb0359d81",
+      "records": 4644,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1740.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1740.gz",
+      "bytes": 68501,
+      "sha256": "43ee619417464686a38a601fde0cad22fe195c87c4c2085f1d7c4d790f63277c",
+      "records": 4068,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1745.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1745.gz",
+      "bytes": 81213,
+      "sha256": "9384f5632d948fcf9427c41fd1be565a30ca8dc199d85f98b7f02770e2d2c3f9",
+      "records": 4807,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1750.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1750.gz",
+      "bytes": 71912,
+      "sha256": "bef4c72295b85dcdcaddbdf655e299d9f2e2a9aaf8cc83b8df3b2545943190e9",
+      "records": 4257,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1755.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1755.gz",
+      "bytes": 66628,
+      "sha256": "81fd1aa66cdb8c82f3aa1b607dfff7dec7e1ce001cc2bed6f1964b43b98cc389",
+      "records": 3940,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1800.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1800.gz",
+      "bytes": 86443,
+      "sha256": "5e8c5280435f19983be0e11240283ecb4248941da35de5d7ea4759cd6cd70a08",
+      "records": 4860,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1805.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1805.gz",
+      "bytes": 69698,
+      "sha256": "1f6dfe6755b664b3e0a13eb8691fb8bafaa912b069acea8b2bba9914ab527ffc",
+      "records": 4127,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1810.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1810.gz",
+      "bytes": 69734,
+      "sha256": "8583f6110d0213092e595cde813359b4a3a54269373f9b6a67e28e7d339fe3be",
+      "records": 3927,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1815.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1815.gz",
+      "bytes": 64721,
+      "sha256": "d24146d2afbcafdaf4c98637ed6218339e5f18a4bf4dd826c78cf653c40a7fa8",
+      "records": 3817,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1820.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1820.gz",
+      "bytes": 72820,
+      "sha256": "84fe08ec12dbf8634074a08e87423ffc555e03d209875cfab40c425df9d81c4b",
+      "records": 4406,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1825.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1825.gz",
+      "bytes": 66022,
+      "sha256": "d1055aa06f2bb039bb2dd61a075fe7d833b78859f7d3129d6c1a06a7c53ea656",
+      "records": 3872,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1830.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1830.gz",
+      "bytes": 76811,
+      "sha256": "258f5a9bae136bdfb69e59a6f6721b7cbc70f2f25329cd82dae392e60c0b74dc",
+      "records": 4544,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1835.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1835.gz",
+      "bytes": 72402,
+      "sha256": "6c5e3b348b2e7585f9bf8abcffbf2c2502fe97e125deb0fe87514b579c01dcae",
+      "records": 4402,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1840.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1840.gz",
+      "bytes": 87792,
+      "sha256": "0a0a7228b8b27387aab2de32a70fc6fec50bc325fb2733534db67d74e49938f5",
+      "records": 5138,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1845.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1845.gz",
+      "bytes": 81549,
+      "sha256": "f32f000e75f96d44864153239bd23715ca9ca2320e2cec311546af0296bbef95",
+      "records": 4756,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1850.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1850.gz",
+      "bytes": 116778,
+      "sha256": "f7863b78567c2fc04eb2e626af0a74d8edbd9484d3b4980a1a6ddbc3fe839b02",
+      "records": 6148,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1855.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1855.gz",
+      "bytes": 61489,
+      "sha256": "723a4ba612cc5edf171a9509eafdd52211aee5d813a807a75e4cef206076fe4c",
+      "records": 3842,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1900.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1900.gz",
+      "bytes": 78414,
+      "sha256": "014ddf112fbbf4ca7f305b511da4ff5a71cf65a6537256427ddfaf7eac231f85",
+      "records": 4068,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1905.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1905.gz",
+      "bytes": 71717,
+      "sha256": "503e90ce0bf1d5175cf5e17ae91b7079d658286b229f12db43b618e9289cbe16",
+      "records": 3921,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1910.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1910.gz",
+      "bytes": 75764,
+      "sha256": "8182d08a1845539f4eeecb9156809ca20e5ed10dbd865df0ca016f90eda88fd1",
+      "records": 4262,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1915.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1915.gz",
+      "bytes": 88125,
+      "sha256": "0fe6429f9115b136b9edc8d71de8e14d8178681a1276a92ac59d214ec1ffc930",
+      "records": 4678,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1920.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1920.gz",
+      "bytes": 76172,
+      "sha256": "ac9b28be6eb9f64e14d0dadec508a2d40683bec1c4d3cb952e83172e3fe2172b",
+      "records": 4098,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1925.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1925.gz",
+      "bytes": 85961,
+      "sha256": "98afe1fa09bbba78374eef3af5eb6b1477196bcdc88984527fcdf3be9c245893",
+      "records": 4670,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1930.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1930.gz",
+      "bytes": 72387,
+      "sha256": "d3cfd66c0dcc25c153d7968819d3284b178f63fd534dffd4a0e8f3893c7d9df9",
+      "records": 4205,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1935.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1935.gz",
+      "bytes": 65927,
+      "sha256": "3983d898ed6e6acfa0d9cc99ebae362b7abe013ed5c3da8e0f9abe254eefb19c",
+      "records": 3861,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1940.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1940.gz",
+      "bytes": 70115,
+      "sha256": "3dddfa315dac97ef239fa28944c43fe2c78decbb5a98d24055e5da47deae3392",
+      "records": 3967,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1945.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1945.gz",
+      "bytes": 69395,
+      "sha256": "3a2a2d786e37da41a572d731a314b2f6aa2b32bc077199b8121bc93da256af88",
+      "records": 4030,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1950.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1950.gz",
+      "bytes": 86364,
+      "sha256": "630e0b9d4d514b44b56a4843b3d5c5f0886c0a946af300748762a7148a186886",
+      "records": 4744,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.1955.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.1955.gz",
+      "bytes": 58640,
+      "sha256": "82dd2602826ec89bb13017e6dbcb25b5ce938135c099c54a71e49d6d778405b8",
+      "records": 3691,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.2000.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.2000.gz",
+      "bytes": 71154,
+      "sha256": "33cf1d68715f1b90017b693dc1a28db770ecf3c6f4d68ae6ce03603c31a0b474",
+      "records": 3807,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.2005.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.2005.gz",
+      "bytes": 62893,
+      "sha256": "a77d00ac3f0d349b81b780b88fcbeeb13eb17c9eee23ca4d0e59348a935f4788",
+      "records": 3750,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.2010.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.2010.gz",
+      "bytes": 68406,
+      "sha256": "4d297679557deb72cb5055f6dfd7977e009f5d5af4bbf058599fa0199cb2a584",
+      "records": 3901,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.2015.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.2015.gz",
+      "bytes": 69422,
+      "sha256": "e1b318f16d29ec5eab5acc1cc7a69e6a8f61a31f4dc5ef79f8624a5ec510d0e6",
+      "records": 3934,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.2020.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.2020.gz",
+      "bytes": 69360,
+      "sha256": "f411a30be18ad1ba6ae13f833174eff50a24be8daad0cc1873f1e1b603a095b2",
+      "records": 4027,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.2025.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.2025.gz",
+      "bytes": 63317,
+      "sha256": "cb329bdcb818325eb6cad6306474aa5ce89ebbac365e344a507f8f54dafdb2c2",
+      "records": 3649,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.2030.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.2030.gz",
+      "bytes": 66103,
+      "sha256": "a123816ecad7f01586ecdb9782e8b0fd857bd29e87958963e14d09e767878642",
+      "records": 3784,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.2035.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.2035.gz",
+      "bytes": 61241,
+      "sha256": "e196a3c415c9e093ace10359413a919bfde598d5ff22802287a4a76c419751aa",
+      "records": 3646,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.2040.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.2040.gz",
+      "bytes": 57989,
+      "sha256": "a7bae28f66120f784c001b9f89984bb8bc0821d74bfb307bbe8ab830f2431e5a",
+      "records": 3411,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.2045.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.2045.gz",
+      "bytes": 63292,
+      "sha256": "d270f717062cfdd64df5cd5ccce94beef4323c9700b7ffb95105d7de2119754d",
+      "records": 3604,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.2050.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.2050.gz",
+      "bytes": 67495,
+      "sha256": "588b522731453c5f5b2bd253c91fc2aa8255d9031dcfb36ce4c49eef62711586",
+      "records": 3767,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.2055.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.2055.gz",
+      "bytes": 82436,
+      "sha256": "c3c1cc452a4e0e5f09978c1a7213610b957458bf811a2dbce3444c341c1be7d9",
+      "records": 4457,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.2100.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.2100.gz",
+      "bytes": 89877,
+      "sha256": "a500760b0107f8e711419eff8e948c00f2a700a8dfca9a6c0d8a0096bc59af87",
+      "records": 4785,
+      "prefixElements": 24
+    },
+    {
+      "name": "updates.20211004.2105.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.2105.gz",
+      "bytes": 83968,
+      "sha256": "87b7d4c4571bc515ff4d606cec51eec1dc8c9090ceb6091ac1ff74f099b31add",
+      "records": 4651,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.2110.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.2110.gz",
+      "bytes": 65721,
+      "sha256": "5c7ba0f1986df93273b621c6bb5ceb1b1ce037798dafaf3378347ce10a4f9009",
+      "records": 3784,
+      "prefixElements": 0
+    },
+    {
+      "name": "updates.20211004.2115.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.2115.gz",
+      "bytes": 94217,
+      "sha256": "e5e58cf7caea345c7791e4926e96ae50bd3c14ab7cf62e51f24ae1b7a9e8661f",
+      "records": 4780,
+      "prefixElements": 22
+    },
+    {
+      "name": "updates.20211004.2120.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.2120.gz",
+      "bytes": 69566,
+      "sha256": "8f534280444aabafeb829ceaf5f79eb6ff474f625629fe0c98225874dcd391b9",
+      "records": 3958,
+      "prefixElements": 37
+    },
+    {
+      "name": "updates.20211004.2125.gz",
+      "url": "https://data.ris.ripe.net/rrc06/2021.10/updates.20211004.2125.gz",
+      "bytes": 68515,
+      "sha256": "df88dca30a3fa3d304e1ec5f6092fe8f40643129397cf57c32f4d05281d91c9a",
+      "records": 3986,
+      "prefixElements": 46
+    }
+  ]
+}
