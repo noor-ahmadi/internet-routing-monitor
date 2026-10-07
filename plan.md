@@ -4,7 +4,7 @@
 
 Build a visually striking investigation tool for internet routing changes. The central experience is a **layered web of routes on a charcoal canvas**, with fine paths connecting stable network nodes. As observers withdraw routes, the web becomes sparse; returning announcements rebuild it.
 
-Open on a historical incident, paused shortly before the change. Users can play, scrub, inspect evidence, or switch to live observations in the same workspace. The first historical target remains Facebook’s October 2021 outage, subject to validating the underlying records.
+Open on a historical incident, paused shortly before the change. Users can play, scrub, inspect evidence, or switch to live observations in the same workspace. The first historical replay reconstructs one prefix at RIPE RIS RRC06 during Facebook’s October 2021 outage; its evidence covers those selected collector peers.
 
 Use **Internet Routing Monitor** throughout the interface and project metadata, with repository name `internet-routing-monitor`.
 
@@ -88,12 +88,19 @@ Fixture scenarios cover a path replacement, shared-edge withdrawals, reannouncem
 
 Local verification uses deterministic replay checks and Playwright in Chromium and WebKit at desktop and mobile sizes, plus an equivalent 200% desktop zoom viewport and automated accessibility checks. The GitHub verification workflow runs the same checks. Browser screenshots and traces are generated locally or in test output and are excluded from source control.
 
+## Second iteration
+
+The default entry is now a saved historical replay for `129.134.30.0/24` at RRC06, from 15:35 to 21:30 UTC on 4 October 2021. A Python importer reconstructs the starting state from the 08:00 RIB and all intervening update archives, then preserves 144 observations across three peers. All 163 archives are fingerprinted, their framing is checked, and selected peer session changes would require a replacement baseline. The complete warm-up sequence contains zero exact-prefix changes before replay start. Large archives remain outside Git; the small normalized replay and provenance manifest are committed.
+
+The interface displays actual peer identities, AS paths, timestamps, archive links, content hashes, and original decoded attributes. Stable node positions use all paths in the interval. Backward/forward seeking and baseline comparison reuse the verified reconstruction. Receipt delay is unrecorded; live demo is available only for the synthetic scenarios. Archive coverage is distinguished from external capture continuity and global reachability. Source terms, scope, normalization limits, and repeatable commands are in [data-validation.md](docs/data-validation.md).
+
+Verification includes importer checks, source-order and shared-edge replay checks, full cached reconstruction against the committed bytes, and Chromium/WebKit desktop/mobile checks of historical evidence and reversible seeking. The synthetic coverage, failure, dense-observer, reduced-motion, and keyboard checks remain. This iteration establishes a bounded saved replay; durable processing, real live capture, and deployment recovery remain upcoming.
+
 ## Next implementation stages
 
-1. Validate one bounded historical interval, its route-state baseline and warm-up updates, source terms, checksums, and normalization. Acquire large archives outside Git. Keep the synthetic replay available until the real reconstruction is verified.
-2. Add Python import/capture, PostgreSQL migrations, and Java/Spring GraphQL processing. Use PostgreSQL as the durable observation inbox and projection store for one prefix first. Keep route state per collector, peer, and prefix. Accept observations idempotently and commit projection updates, evidence, and checkpoints in the same transaction.
-3. Implement the route snapshot query, authoritative replay seeking, and subsequent route-change subscriptions. Snapshot and changes must share a consistent projection cursor; reconnect either resumes retained changes or explicitly requests a new snapshot. Bound pages and query complexity and batch relationship reads.
-4. Prove duplicate handling, interrupted imports, worker restart recovery, per-peer ordering, collector gaps, and backward/forward seeking with real inputs. Enforce exclusive database-backed worker ownership through deployment overlap. A source reconnect alone cannot recover missed external events or establish a new baseline.
-5. Package the verified local system in Docker Compose, then kind Deployments and bounded import/replay Jobs. Measure resource needs before a temporary Terraform/EKS demonstration with ECR, S3, and EBS-backed PostgreSQL. Refine the provisional session allowance using the actual region and configuration, and verify teardown afterward.
+1. Add continuous Python capture, PostgreSQL migrations, and Java/Spring GraphQL processing. Use PostgreSQL as the durable observation inbox and projection store for the verified prefix first. Keep route state per collector, peer, and prefix. Accept observations idempotently and commit projection updates, evidence, and checkpoints in the same transaction.
+2. Implement the route snapshot query, authoritative replay seeking, and subsequent route-change subscriptions. Snapshot and changes must share a consistent projection cursor; reconnect either resumes retained changes or explicitly requests a new snapshot. Bound pages and query complexity and batch relationship reads.
+3. Prove duplicate handling, interrupted imports, worker restart recovery, per-peer ordering, collector gaps, and backward/forward seeking with real inputs. Enforce exclusive database-backed worker ownership through deployment overlap. A source reconnect alone cannot recover missed external events or establish a new baseline. Validate replacement baselines and any additional collectors before expanding the archive replay.
+4. Package the verified local system in Docker Compose, then kind Deployments and bounded import/replay Jobs. Measure resource needs before a temporary Terraform/EKS demonstration with ECR, S3, and EBS-backed PostgreSQL. Refine the provisional session allowance using the actual region and configuration, and verify teardown afterward.
 
 Kafka, Redis, Spark, additional API replicas, and continuous cloud hosting remain optional future decisions based on measured need. A validated replay recording and processing-recovery recording belong to the integrated stages; this prototype does not establish backend or deployment recovery.

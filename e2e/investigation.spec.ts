@@ -22,7 +22,7 @@ async function expectNoPageOverflow(page: Page) {
 test('replay, evidence, shared segments and backward seeking stay synchronized', async ({ page }) => {
   const errors: string[] = [];
   page.on('pageerror', error => errors.push(error.message));
-  await page.goto('/');
+  await page.goto('/?scenario=incident');
   await expect(page.getByRole('heading', { name: 'Internet Routing Monitor' })).toBeVisible();
   await expect(page.locator('.route-row')).toHaveCount(6);
   const positions = await page.locator('.observer-node').evaluateAll(nodes => nodes.map(node => node.getAttribute('transform')));
@@ -45,7 +45,7 @@ test('replay, evidence, shared segments and backward seeking stay synchronized',
 });
 
 test('keyboard stepping, baseline comparison, isolation and zoom work', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('/?scenario=incident');
   await page.getByRole('button', { name: 'Next event' }).click();
   await expect(page.getByRole('slider')).toHaveValue('20');
   await page.getByRole('button', { name: 'Previous event' }).click();
@@ -66,7 +66,7 @@ test('keyboard stepping, baseline comparison, isolation and zoom work', async ({
 });
 
 test('observer switching exposes unknown baselines and honors the six-path limit', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('/?scenario=incident');
   await page.getByRole('button', { name: 'Choose observers' }).click();
   const choices = page.getByRole('checkbox');
   await expect(choices.nth(6)).toBeDisabled();
@@ -96,7 +96,7 @@ test('a source gap stays uncertain until new evidence after reconnect', async ({
 });
 
 test('play/pause works and simulated capture continues while presentation is paused', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('/?scenario=incident');
   await page.getByRole('button', { name: 'Play replay', exact: true }).click();
   await expect(page.getByRole('slider')).not.toHaveValue('12');
   await page.getByRole('button', { name: 'Pause replay', exact: true }).click();
@@ -111,7 +111,7 @@ test('play/pause works and simulated capture continues while presentation is pau
 
 test('desktop/mobile and a 200% desktop zoom viewport remain accessible with reduced motion', async ({ page }, testInfo) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
-  await page.goto('/');
+  await page.goto('/?scenario=incident');
   const results = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa']).analyze();
   expect(results.violations.map(v => `${v.id}: ${v.nodes.map(n => n.target).join(', ')}`)).toEqual([]);
   await seek(page, 30);
@@ -156,7 +156,7 @@ test('dense fixtures render only six paths and retain a bounded observer chooser
 });
 
 test('hidden tabs stop replay presentation and keyboard panning has a reset', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('/?scenario=incident');
   const web = page.getByRole('group', { name: /Interactive route web/ });
   await web.focus();
   await web.press('ArrowRight');
@@ -178,4 +178,50 @@ test('hidden tabs stop replay presentation and keyboard panning has a reset', as
     document.dispatchEvent(new Event('visibilitychange'));
   });
   await expect(page.getByRole('slider')).not.toHaveValue(held);
+});
+
+test('historical entry shows actual routes, traceable evidence and reversible seeking', async ({ page }, testInfo) => {
+  const errors: string[] = [];
+  page.on('pageerror', error => errors.push(error.message));
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.goto('/');
+  await expect(page.locator('.freshness')).toContainText('RIPE RIS archive');
+  await expect(page.locator('.route-row')).toHaveCount(3);
+  await expect(page.getByRole('button', { name: 'Live demo', exact: true })).toBeDisabled();
+  await expect(page.getByRole('slider')).toHaveValue('120');
+  await expect(page.locator('.timeline-heading')).toContainText('15:37:00');
+  await expect(page.locator('.timeline-labels span').last()).toBeVisible();
+  await expect(page.locator('.timeline-labels span').last()).toContainText('21:30:00 UTC');
+  const positions = await page.locator('[data-asn]').evaluateAll(nodes => nodes.map(n => [n.getAttribute('data-asn'), n.getAttribute('transform')]));
+  await page.locator('.route-row').first().click();
+  const dialog = page.getByRole('dialog');
+  await expect(dialog).toContainText('Reconstructed baseline');
+  await expect(dialog).toContainText('Not recorded in MRT');
+  await expect(dialog.locator('.evidence-record')).toContainText('bview.20211004.0800.gz');
+  await expect(dialog.locator('.evidence-record')).toContainText('"sourceTime": "2021-10-04T08:00:00Z"');
+  await expect(dialog.getByRole('link', { name: 'Open supporting MRT archive' })).toHaveAttribute('href', 'https://data.ris.ripe.net/rrc06/2021.10/bview.20211004.0800.gz');
+  await page.keyboard.press('Escape');
+  await seek(page, 900);
+  await expect(page.locator('.route-row .route-status.withdrawn')).toHaveCount(3);
+  await page.locator('.route-row').first().click();
+  await expect(dialog).toContainText('2021-10-04T15:45:51Z');
+  await expect(dialog.locator('.evidence-record')).toContainText('updates.20211004.1545.gz');
+  await expect(dialog.locator('.evidence-record')).toContainText('"elem_type": "W"');
+  await page.keyboard.press('Escape');
+  await seek(page, 21300);
+  await expect(page.locator('.route-row .route-status.observed')).toHaveCount(3);
+  await seek(page, 120);
+  await expect(page.locator('.route-row').first()).toContainText('AS2497 → AS32934');
+  expect(await page.locator('[data-asn]').evaluateAll(nodes => nodes.map(n => [n.getAttribute('data-asn'), n.getAttribute('transform')]))).toEqual(positions);
+  const results = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa']).analyze();
+  expect(results.violations.map(v => v.id)).toEqual([]);
+  await expectNoPageOverflow(page);
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.screenshot({ path: testInfo.outputPath('historical-replay.png'), fullPage: true });
+  await page.getByRole('combobox', { name: 'Replay collection' }).click();
+  await page.getByRole('option', { name: 'Facebook outage · synthetic replay', exact: true }).click();
+  await expect(page.locator('.freshness')).toContainText('Synthetic data');
+  await expect(page.getByRole('button', { name: 'Live demo', exact: true })).toBeEnabled();
+  await expect(page.locator('.route-row')).toHaveCount(6);
+  expect(errors).toEqual([]);
 });

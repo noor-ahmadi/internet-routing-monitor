@@ -1,6 +1,16 @@
+import historicalReplay from '../data/facebook-2021/replay.json';
+
 export type RouteStatus = 'observed' | 'withdrawn' | 'uncertain' | 'unknown';
 export type EventKind = 'announcement' | 'path-change' | 'withdrawal' | 'gap-start' | 'gap-end';
-export type Scenario = 'incident' | 'coverage' | 'unknown' | 'dense' | 'empty' | 'loading' | 'error' | 'stale';
+export type Scenario = 'historical' | 'incident' | 'coverage' | 'unknown' | 'dense' | 'empty' | 'loading' | 'error' | 'stale';
+
+export interface ArchiveEvidence {
+  archive: string;
+  sha256: string;
+  prefixElement: number;
+  sourceTime: string;
+  raw: Record<string, unknown>;
+}
 
 export interface Observer {
   id: string;
@@ -9,6 +19,8 @@ export interface Observer {
   peer: string;
   asn: number;
   baseline: number[] | null;
+  baselineStatus?: RouteStatus;
+  baselineEvidence?: ArchiveEvidence;
 }
 export interface RouteEvent {
   id: string;
@@ -16,6 +28,8 @@ export interface RouteEvent {
   observerId: string;
   kind: EventKind;
   path?: number[];
+  sequence?: number;
+  evidence?: ArchiveEvidence;
 }
 export interface RouteState {
   observer: Observer;
@@ -31,11 +45,14 @@ export interface Fixture {
   events: RouteEvent[];
   duration: number;
   initialTime: number;
+  source?: 'ris-mrt';
+  start?: number;
 }
 
 export const PREFIX = '129.134.30.0/24';
 export const START = Date.parse('2021-10-04T15:38:00Z');
 export const SCENARIOS: { id: Scenario; label: string }[] = [
+  { id: 'historical', label: 'Facebook outage · RIPE RIS archive' },
   { id: 'incident', label: 'Facebook outage · synthetic replay' },
   { id: 'coverage', label: 'Capture gap & recovery' },
   { id: 'unknown', label: 'Unknown starting state' },
@@ -77,6 +94,7 @@ const events: RouteEvent[] = [
 ];
 
 export function getFixture(id: Scenario): Fixture {
+  if (id === 'historical') return historicalReplay as Fixture;
   if (id === 'dense') {
     return {
       id, duration: 120, initialTime: 12,
@@ -101,12 +119,12 @@ export function getFixture(id: Scenario): Fixture {
 export function snapshotAt(fixture: Fixture, requestedTime: number) {
   const time = Math.max(0, Math.min(fixture.duration, requestedTime));
   const states = new Map<string, RouteState>(fixture.observers.map(observer => [observer.id, {
-    observer, status: observer.baseline ? 'observed' : 'unknown', path: observer.baseline?.slice() ?? [],
+    observer, status: observer.baselineStatus ?? (observer.baseline ? 'observed' : 'unknown'), path: observer.baseline?.slice() ?? [],
     previousPath: [], gapOpen: false, lastEvent: null,
   }]));
   const accepted = new Set<string>();
   const applied: RouteEvent[] = [];
-  const ordered = fixture.events.slice().sort((a, b) => a.at - b.at || a.id.localeCompare(b.id));
+  const ordered = fixture.events.slice().sort((a, b) => a.at - b.at || (a.sequence ?? 0) - (b.sequence ?? 0) || a.id.localeCompare(b.id));
   for (const event of ordered) {
     if (event.at > time || accepted.has(event.id)) continue;
     const route = states.get(event.observerId);
@@ -132,7 +150,7 @@ export function snapshotAt(fixture: Fixture, requestedTime: number) {
   }
   return {
     time, routes: [...states.values()], events: applied,
-    cursor: `fixture:${fixture.id}:${time}:${applied.length}`,
+    cursor: `${fixture.source === 'ris-mrt' ? 'archive' : 'fixture'}:${fixture.id}:${time}:${applied.length}`,
   };
 }
 
@@ -143,17 +161,18 @@ export function supportedEdges(routes: RouteState[]) {
     for (let i = 1; i < route.path.length; i++) {
       const from = route.path[i - 1], to = route.path[i], key = `${from}:${to}`;
       const edge = edges.get(key) ?? { from, to, observers: [], uncertain: [] };
-      (route.status === 'uncertain' ? edge.uncertain : edge.observers).push(route.observer.id);
+      const support = route.status === 'uncertain' ? edge.uncertain : edge.observers;
+      if (!support.includes(route.observer.id)) support.push(route.observer.id);
       edges.set(key, edge);
     }
   }
   return [...edges.values()];
 }
 
-export function timeLabel(seconds: number) {
+export function timeLabel(seconds: number, start = START) {
   return new Intl.DateTimeFormat('en-GB', {
     hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false, timeZone: 'UTC',
-  }).format(START + seconds * 1000);
+  }).format(start + seconds * 1000);
 }
 
 export function eventLabel(kind: EventKind) {
@@ -167,7 +186,7 @@ export function routeLabel(status: RouteStatus) {
 
 export function initialView() {
   const query = new URLSearchParams(window.location.search);
-  const scenario = SCENARIOS.find(s => s.id === query.get('scenario'))?.id ?? 'incident';
+  const scenario = SCENARIOS.find(s => s.id === query.get('scenario'))?.id ?? 'historical';
   const fixture = getFixture(scenario);
   const raw = Number(query.get('t') ?? fixture.initialTime);
   const ids = query.get('observers')?.split(',').filter(id => fixture.observers.some(o => o.id === id));

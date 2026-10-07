@@ -7,7 +7,8 @@ import { MinusIcon, PlusIcon, ResetIcon } from '@radix-ui/react-icons';
 import { PREFIX, routeLabel, supportedEdges, type RouteState } from './replay';
 
 type Point = [number, number];
-const nodes: Record<number, { point: Point; name: string }> = {
+type Nodes = Record<number, { point: Point; name: string }>;
+const fixtureNodes: Nodes = {
   64520: { point: [465, 90], name: 'Transit A' },
   64521: { point: [495, 180], name: 'Transit B' },
   64522: { point: [465, 275], name: 'Transit C' },
@@ -15,6 +16,23 @@ const nodes: Record<number, { point: Point; name: string }> = {
   64540: { point: [770, 245], name: 'Transit E' },
   32934: { point: [1010, 180], name: 'Destination origin' },
 };
+// Use every path in the interval, so later announcements cannot move a node.
+function layoutNodes(paths: number[][], historical: boolean): Nodes {
+  if (!historical) return fixtureNodes;
+  const depth = new Map<number, number>();
+  for (const path of paths) for (let i = 1; i < path.length - 1; i++) {
+    depth.set(path[i], Math.max(depth.get(path[i]) ?? 0, path.length - 1 - i));
+  }
+  const maximum = Math.max(1, ...depth.values());
+  const nodes: Nodes = { 32934: fixtureNodes[32934] };
+  for (let hop = 1; hop <= maximum; hop++) {
+    const asns = [...depth].filter(([, distance]) => distance === hop).map(([asn]) => asn).sort((a, b) => a - b);
+    asns.forEach((asn, i) => {
+      nodes[asn] = { point: [390 + (maximum - hop) / maximum * 520, 75 + (i + .5) / asns.length * 230], name: 'Observed AS' };
+    });
+  }
+  return nodes;
+}
 const curve = line<Point>().x(p => p[0]).y(p => p[1]).curve(curveMonotoneX);
 
 function segment(a: Point, b: Point, offset = 0) {
@@ -22,13 +40,14 @@ function segment(a: Point, b: Point, offset = 0) {
     [a[0] + (b[0] - a[0]) * .64, b[1] + offset], b]) ?? '';
 }
 
-function routePath(route: RouteState, path: number[], slot: number) {
+function routePath(path: number[], slot: number, nodes: Nodes) {
   const points: Point[] = [[185, 45 + slot * 54], ...path.slice(1).map(asn => nodes[asn]?.point).filter((p): p is Point => !!p)];
   return points.slice(1).map((point, i) => segment(points[i], point, (slot - 2.5) * 5)).join(' ');
 }
 
-export default function RouteWeb({ routes, baseline, selected, isolate, compare, time, reducedMotion, hidden, onSelect }: {
+export default function RouteWeb({ routes, baseline, allPaths, historical, selected, isolate, compare, time, reducedMotion, hidden, onSelect }: {
   routes: RouteState[]; baseline: RouteState[]; selected: string | null; isolate: string | null;
+  allPaths: number[][]; historical: boolean;
   compare: boolean; time: number; reducedMotion: boolean; hidden: boolean; onSelect: (id: string, trigger?: SVGElement) => void;
 }) {
   const svgRef = useRef<SVGSVGElement>(null);
@@ -36,6 +55,10 @@ export default function RouteWeb({ routes, baseline, selected, isolate, compare,
   const zoomRef = useRef<ZoomBehavior<SVGSVGElement, unknown> | null>(null);
   const slots = useRef(new Map<string, number>());
   const [zoomValue, setZoomValue] = useState(1);
+  const nodes = useMemo(() => layoutNodes(allPaths, historical), [allPaths, historical]);
+  const lastEvents = useRef(new Map(routes.map(r => [r.observer.id, r.lastEvent?.id])));
+  const changed = new Set(routes.filter(r => r.lastEvent?.id !== lastEvents.current.get(r.observer.id)).map(r => r.observer.id));
+  useEffect(() => { lastEvents.current = new Map(routes.map(r => [r.observer.id, r.lastEvent?.id])); }, [routes]);
   for (const id of slots.current.keys()) if (!routes.some(r => r.observer.id === id)) slots.current.delete(id);
   for (const route of routes) {
     if (!slots.current.has(route.observer.id)) {
@@ -108,18 +131,18 @@ export default function RouteWeb({ routes, baseline, selected, isolate, compare,
             className={edge.observers.length ? 'shared-edge' : 'uncertain-edge'} />)}
         </g>
         {compare && baseline.filter(r => !isolate || r.observer.id === isolate).map(route => <path
-          key={`before-${route.observer.id}`} d={routePath(route, route.path, slots.current.get(route.observer.id) ?? 0)}
+          key={`before-${route.observer.id}`} d={routePath(route.path, slots.current.get(route.observer.id) ?? 0, nodes)}
           className="comparison-path" aria-hidden="true" />)}
         {visible.map(route => {
           const slot = slots.current.get(route.observer.id) ?? 0;
           const isSelected = selected === route.observer.id;
-          const recent = route.lastEvent && time === route.lastEvent.at;
+          const recent = route.lastEvent && changed.has(route.observer.id);
           const withdrawn = route.status === 'withdrawn';
           const path = route.path.length ? route.path : route.previousPath;
-          const d = routePath(route, path, slot);
+          const d = routePath(path, slot, nodes);
           return <g key={route.observer.id} data-observer={route.observer.id}>
             {recent && route.previousPath.length > 0 && route.lastEvent?.kind === 'path-change' && <path
-              d={routePath(route, route.previousPath, slot)} className="withdrawal-path" data-transition="leave" aria-hidden="true" />}
+              d={routePath(route.previousPath, slot, nodes)} className="withdrawal-path" data-transition="leave" aria-hidden="true" />}
             {path.length > 0 && <>
               <path d={d} className={`observer-path ${isSelected ? 'selected-path' : ''} ${route.status === 'uncertain' ? 'uncertain-path' : ''} ${withdrawn ? 'withdrawal-path' : ''} ${recent && !withdrawn ? 'new-path' : ''}`}
                 data-route-state={route.status} data-transition={recent ? withdrawn ? 'leave' : 'enter' : undefined}
@@ -146,10 +169,10 @@ export default function RouteWeb({ routes, baseline, selected, isolate, compare,
           </g>;
         })}
         {Object.entries(nodes).filter(([asn]) => Number(asn) !== 32934).map(([asn, node]) => <g
-          key={asn} transform={`translate(${node.point.join(' ')})`} aria-hidden="true" className={activeAsns.has(Number(asn)) ? 'network-node' : 'network-node inactive-node'}>
+          key={asn} data-asn={asn} transform={`translate(${node.point.join(' ')})`} aria-hidden="true" className={activeAsns.has(Number(asn)) ? 'network-node' : 'network-node inactive-node'}>
           <circle r="17" className="node-halo" /><circle r="5" className="transit-dot" />
-          <text x="0" y="-29" textAnchor="middle" className="node-asn">AS{asn}</text>
-          <text x="0" y="-46" textAnchor="middle" className="node-detail">{node.name}</text>
+          <text x="0" y={historical ? -22 : -29} textAnchor="middle" className="node-asn">AS{asn}</text>
+          {!historical && <text x="0" y="-46" textAnchor="middle" className="node-detail">{node.name}</text>}
         </g>)}
         <g transform="translate(1010 180)" aria-hidden="true" className="destination-node">
           <circle r="34" className="destination-ring" /><circle r="22" className="destination-inner" /><circle r="7" className="destination-dot" />

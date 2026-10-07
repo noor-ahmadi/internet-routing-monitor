@@ -46,3 +46,33 @@ test('path replacement and reannouncement use complete observer paths', () => {
   assert.equal(snapshotAt(getFixture('empty'), 0).routes.length, 0);
   assert.equal(snapshotAt(getFixture('dense'), 69).routes.filter(r => r.status === 'withdrawn').length, 240);
 });
+
+test('validated historical replay seeks through withdrawal and route return', () => {
+  const replay = getFixture('historical');
+  assert.equal(replay.source, 'ris-mrt');
+  assert.equal(replay.duration, 21300);
+  assert.equal(snapshotAt(replay, 0).routes.filter(r => r.status === 'observed').length, 3);
+  assert.equal(snapshotAt(replay, 900).routes.filter(r => r.status === 'withdrawn').length, 3);
+  assert.equal(snapshotAt(replay, replay.duration).routes.filter(r => r.status === 'observed').length, 3);
+  const withdrawn = snapshotAt(replay, 900);
+  snapshotAt(replay, replay.duration);
+  assert.deepEqual(snapshotAt(replay, 900), withdrawn);
+  assert.equal(withdrawn.cursor, `archive:historical:900:${withdrawn.events.length}`);
+  assert(replay.events.every(e => e.evidence?.sha256.length === 64));
+});
+
+test('same-second archive observations retain source order across seeks', () => {
+  const replay = getFixture('incident');
+  const events = [
+    { id: 'z', at: 20, sequence: 1, observerId: 'demo-1', kind: 'announcement' as const, path: [64512, 174, 32934] },
+    { id: 'a', at: 20, sequence: 2, observerId: 'demo-1', kind: 'withdrawal' as const },
+  ];
+  assert.equal(snapshotAt({ ...replay, events: events.slice().reverse() }, 20).routes[0].status, 'withdrawn');
+});
+
+test('a repeated AS edge contributes at most one support per observer', () => {
+  const replay = getFixture('incident');
+  const routes = snapshotAt(replay, 0).routes.slice(0, 1);
+  routes[0].path = [64512, 174, 174, 174, 32934];
+  assert.deepEqual(supportedEdges(routes).find(e => e.from === 174 && e.to === 174)?.observers, ['demo-1']);
+});
