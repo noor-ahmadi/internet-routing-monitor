@@ -72,13 +72,12 @@ export default function RouteWeb({ routes, baseline, allPaths, historical, selec
   allPaths: number[][]; historical: boolean; compare: boolean; time: number;
   reducedMotion: boolean; hidden: boolean; onSelect: (id: string, trigger?: SVGElement) => void;
 }) {
-  const canvasRef = useRef<HTMLDivElement>(null);
   const svgRef = useRef<SVGSVGElement>(null);
   const groupRef = useRef<SVGGElement>(null);
   const zoomRef = useRef<ZoomBehavior<SVGSVGElement, unknown> | null>(null);
   const slots = useRef(new Map<string, number>());
   const initialCount = useRef(routes.length);
-  const [compact, setCompact] = useState(window.innerWidth < 700);
+  const [compact, setCompact] = useState(window.matchMedia('(max-width: 699px)').matches);
   const [zoomValue, setZoomValue] = useState(1);
   const nodes = useMemo(() => layoutNodes(allPaths, historical), [allPaths, historical]);
   const width = compact ? 500 : 1200, height = compact ? 700 : 330;
@@ -102,10 +101,10 @@ export default function RouteWeb({ routes, baseline, allPaths, historical, selec
   }
 
   useEffect(() => {
-    if (!canvasRef.current) return;
-    const resize = new ResizeObserver(([entry]) => setCompact(entry.contentRect.width < 700));
-    resize.observe(canvasRef.current);
-    return () => resize.disconnect();
+    const media = window.matchMedia('(max-width: 699px)');
+    const resize = () => setCompact(media.matches);
+    media.addEventListener('change', resize);
+    return () => media.removeEventListener('change', resize);
   }, []);
 
   useEffect(() => {
@@ -127,7 +126,7 @@ export default function RouteWeb({ routes, baseline, allPaths, historical, selec
     if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); onSelect(id, event.currentTarget); }
   };
 
-  return <div ref={canvasRef} className={`route-canvas ${compact ? 'compact-canvas' : ''}`}>
+  return <div className={`route-canvas ${compact ? 'compact-canvas' : ''}`}>
     <svg ref={svgRef} viewBox={`0 0 ${width} ${height}`} className="route-svg" role="group" tabIndex={0}
       aria-label="Interactive route web. Arrow keys pan, plus and minus zoom, Home resets. Open Observers for complete textual paths and evidence."
       onKeyDown={event => {

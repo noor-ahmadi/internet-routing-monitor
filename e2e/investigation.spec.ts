@@ -127,6 +127,7 @@ test('reduced motion, mobile and 200% desktop zoom remain accessible', async ({ 
   await seek(page, 30);
   await expect(page.locator('[data-observer="demo-1"] .withdrawal-path')).toHaveCSS('opacity', '0');
   if (testInfo.project.name.includes('desktop')) await page.setViewportSize({ width: 720, height: 500 });
+  await expect(page.locator('.route-svg')).toHaveAttribute('viewBox', testInfo.project.name.includes('desktop') ? '0 0 1200 330' : '0 0 500 700');
   await expectNoOverflow(page);
   await page.screenshot({ path: testInfo.outputPath('reduced-motion.png'), fullPage: true });
   await openPaths(page);
