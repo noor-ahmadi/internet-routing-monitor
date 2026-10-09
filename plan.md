@@ -10,21 +10,21 @@ Use **Internet Routing Monitor** throughout the interface and project metadata, 
 
 ## Visual experience
 
-- **Composition:** the route web dominates the screen. A slim masthead contains the prefix, incident selector, Live/Replay switch, and freshness. The timeline sits directly below the diagram. Selecting a route opens an evidence drawer.
-- **Geometry:** observers sit toward the left, the destination prefix toward the right, and shared network nodes connect them through curved strands. Subtle offsets separate observer paths into layers. Node positions remain stable during playback and updates.
-- **Style:** canvas `#0C1015`, opaque controls `#131920`, off-white text, neutral gray routes, cyan selection/new observations, and coral withdrawn observations. Use self-hosted IBM Plex Sans with Plex Mono for addresses, ASNs, and timestamps.
+- **Composition:** an open route drawing, oversized incident typography, and a compact playback dock. Replay settings and textual observer paths live in a sliding left panel; route evidence opens on the right. Main-screen copy stays brief, with scope and raw records available on demand.
+- **Geometry:** observers sit toward the left, the destination prefix toward the right, and shared network nodes connect them through curved strands. On small screens, the same relationships run from top to bottom. Positions stay stable during playback within each orientation. Subtle offsets separate observer paths into layers.
+- **Style:** near-black olive canvas `#11130F`, opaque panels `#1C1F18`, pale text, neutral routes, lime selection/new records, coral withdrawals, and amber uncertainty. Self-hosted Syne supplies the wide display type, Manrope the interface, and JetBrains Mono the addresses, ASNs, and timestamps.
 - **Restraint:** generous space around the network, thin separators, small corner radii, and readable labels. The diagram supplies the visual interest; surrounding controls stay quiet.
 - **Interaction:** select a route, isolate an observer, compare before/after paths, pan, zoom, reset the view, and step through events. Display six observer paths at once, with explicit displayed/available counts and controls for choosing others.
 
 | Observation | Visual behavior |
 |---|---|
-| Announcement | Briefly emphasize the complete new path, then settle |
-| Path change | Crossfade between old and replacement paths while nodes remain fixed |
+| Announcement | Draw the recorded AS path, then settle |
+| Path change | Draw the replacement path while nodes remain fixed |
 | Withdrawal | Show the previous path as a coral dashed trace, then remove its active appearance |
 | Source gap | Mark affected observations as uncertain and show a coverage notice |
 | Reannouncement | Restore the corresponding observed path |
 
-Transitions last roughly 350 ms. No continuous drifting occurs when the data is unchanged. Reduced motion shows final states immediately.
+Record transitions last roughly 650 ms; panel movement uses a damped spring. No continuous drifting occurs when the data is unchanged. Reduced motion shows final states immediately.
 
 Lines represent **observed network relationships**. They do not depict physical cables, packet movement, or a proven fault location. A withdrawal from one observer must preserve segments still supported by another.
 
@@ -33,11 +33,11 @@ Lines represent **observed network relationships**. They do not depict physical 
 Apply the requested methods deliberately:
 
 - **Taste:** composition, typography, restraint, and purposeful motion. Its marketing-layout recipes do not govern this investigation workspace.
-- **VoltAgent references:** adapt Linear’s restrained controls and IBM’s analytical clarity into one original visual system.
+- **VoltAgent references:** use Raycast's restrained panel chrome and Wired's editorial hierarchy as starting points for an original diagram-led composition.
 - **Vercel Web Design Guidelines:** review keyboard behavior, contrast, responsive layouts, forms, and motion.
 - **Playwright CLI:** inspect the actual interface and capture reproducible visual evidence.
 
-Use React/TypeScript with **SVG**, D3 for stable layout and pan/zoom, **Anime.js** for scoped route transitions, and styled Radix primitives for complex controls. D3 supports fixed coordinates and static layouts, which fit the stable scene. [D3 documentation](https://d3js.org/d3-force/simulation), [Anime.js documentation](https://animejs.com/documentation/animation/)
+Use React/TypeScript, SVG curves, and D3 zoom. Motion supplies record drawing, fading, and spring panel transitions, with its animation features loaded separately. The sliding panel composition adapts shadcn/ui; Radix supplies focus management, keyboard access, dialogs, and selectors. Animate UI's Sheet is a motion reference, and React Bits was reviewed for animation ideas. The diagram stays data-driven, without decorative route particles. [shadcn/ui Sheet](https://ui.shadcn.com/docs/components/radix/sheet), [Animate UI Sheet](https://animate-ui.com/docs/components/radix/sheet), [React Bits](https://github.com/DavidHDev/react-bits), [Motion accessibility](https://motion.dev/docs/react-accessibility). Attribution is in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 Add these GraphQL capabilities to the earlier backend design:
 
@@ -95,6 +95,14 @@ The default entry is now a saved historical replay for `129.134.30.0/24` at RRC0
 The interface displays actual peer identities, AS paths, timestamps, archive links, content hashes, and original decoded attributes. Stable node positions use all paths in the interval. Backward/forward seeking and baseline comparison reuse the verified reconstruction. Receipt delay is unrecorded; live demo is available only for the synthetic scenarios. Archive coverage is distinguished from external capture continuity and global reachability. Source terms, scope, normalization limits, and repeatable commands are in [data-validation.md](docs/data-validation.md).
 
 Verification includes importer checks, source-order and shared-edge replay checks, full cached reconstruction against the committed bytes, and Chromium/WebKit desktop/mobile checks of historical evidence and reversible seeking. The synthetic coverage, failure, dense-observer, reduced-motion, and keyboard checks remain. This iteration establishes a bounded saved replay; durable processing, real live capture, and deployment recovery remain upcoming.
+
+## Third iteration
+
+Replace the dashboard composition with a minimal, diagram-led investigation: wide Syne incident type, quiet Manrope controls, and JetBrains Mono data labels. Settings and observer paths open in a left panel; evidence opens on the right, with earlier paths and raw records behind disclosures. The drawing includes nearby AS-path and shared-peer annotations. Mobile rotates the relationships into a vertical diagram and keeps playback within reach.
+
+Motion replaces Anime.js for spring panel transitions, route drawing, and withdrawal fading. Animations react to record identity rather than looping to imply traffic. Reduced motion skips drawing and panel movement, and hidden tabs suspend replay updates. Fixed AS and observer positions, bounded observer selection, historical provenance, synthetic state scenarios, comparison, isolation, and keyboard navigation remain part of acceptance.
+
+Verification covers panel focus and Escape dismissal, route transitions, reversible historical seeking, unknown and uncertain states, loading/error recovery, six-path limits, desktop/mobile layouts, 200% desktop zoom, and automated accessibility in Chromium and WebKit. A production-build Lighthouse run checks load performance and accessibility. Historical capture, backend processing, and deployment scope remain as described in the second iteration.
 
 ## Next implementation stages
 
