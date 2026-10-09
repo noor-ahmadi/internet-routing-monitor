@@ -140,6 +140,7 @@ test('loading, empty, stale and error states have readable recovery actions', as
   for (const [scenario, expected] of [['loading', 'Loading route snapshot'], ['empty', 'No observations for this interval'], ['error', 'The observation source is unavailable'], ['stale', 'Stale fixture']] as const) {
     await page.goto(`/?scenario=${scenario}`);
     await expect(page.getByRole('main')).toContainText(expected);
+    if (scenario === 'stale') await expect(page.locator('.freshness')).toContainText('Stale');
     if (scenario === 'loading' || scenario === 'error') {
       await expect(page.locator('.timeline-track rect')).toHaveCount(0);
       await openPaths(page);

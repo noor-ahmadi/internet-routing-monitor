@@ -163,7 +163,7 @@ export default function App() {
         </div>
         <div className="snapshot-summary">
           <div className="observation-count"><strong>{unavailable ? '—' : observed.toString().padStart(2, '0')}</strong><span>/{fixture.observers.length.toString().padStart(2, '0')}<small>paths observed</small></span></div>
-          <div className="freshness"><span className="status-dot" aria-hidden="true" /><span>{historical ? 'RIPE RIS archive' : 'Synthetic data'}</span><span className="sr-only">{mode === 'live' ? liveFollowing ? 'Simulated feed' : 'Presentation paused' : playing ? 'Replay playing' : 'Replay paused'}</span></div>
+          <div className={`freshness ${scenario === 'stale' ? 'coverage-warning' : ''}`}><span className={`status-dot ${scenario === 'stale' ? 'stale-dot' : ''}`} aria-hidden="true" /><span>{historical ? 'RIPE RIS archive' : scenario === 'stale' ? 'Synthetic data · Stale' : 'Synthetic data'}</span><span className="sr-only">{mode === 'live' ? liveFollowing ? 'Simulated feed' : 'Presentation paused' : playing ? 'Replay playing' : 'Replay paused'}</span></div>
         </div>
       </div>
       <section className="investigation-panel" aria-label="Prefix route investigation">
